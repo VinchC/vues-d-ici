@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="w-full z-20 start-0 ">
       <div className="">
-        <div className="max-w-7xl bg-gray-500 bottom-0 start-0 border-b border-default mx-auto p-4 py-6 lg:py-8">
+        <div className="bg-gray-500 bottom-0 start-0 border-b border-default mx-auto p-4 py-6 lg:py-8">
           <div className="flex justify-between max-md:block">
             <div>
               <div className="mb-6">

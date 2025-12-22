@@ -4,7 +4,7 @@ export const NavBar = () => {
   return (
     <header className="top-0 h-16 border-b-2 border-background z-50">
       <nav className="fixed w-full z-20 top-0 start-0 border-b border-default">
-        <div className="max-w-7xl bg-gray-500 flex flex-wrap items-center justify-between mx-auto p-4">
+        <div className="bg-gray-500 flex flex-wrap items-center justify-between mx-auto p-4">
           <Link
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
