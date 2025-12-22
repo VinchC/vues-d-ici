@@ -1,10 +1,9 @@
-import { FacebookIcon } from "@/app/components/icons/FacebookIcon";
 import {
   CarouselButtonProps,
   CarouselSliderProps,
   CategoryProps,
   NavLinkProps,
-  MediaProps,
+  // MediaProps,
   DistributionPlacesProps,
   ArticleProps,
   CharterProps,
@@ -16,10 +15,6 @@ import {
 
 import distribution from "@/public/images/distribution_jeunes_ambitieux.jpg";
 import station from "@/public/images/station_serge_gainsbourg.jpg";
-import { GoogleIcon } from "@/app/components/icons/GoogleIcon";
-import { InstagramIcon } from "@/app/components/icons/InstagramIcon";
-import { HelloAssoIcon } from "@/app/components/icons/HelloAssoIcon";
-
 
 export const DISPLAY_CONTENT: DisplayContentProps[] = [
   {
@@ -50,7 +45,11 @@ export const JOURNALS: JournalProps[] = [
       {
         id: 1,
         categoryName: "Actooooos et initiatives... pp. 4-6",
-        text: ["La maison de santé bubu", "La médiathèque", "Librairie Boréalia"],
+        text: [
+          "La maison de santé bubu",
+          "La médiathèque",
+          "Librairie Boréalia",
+        ],
       },
       {
         id: 2,
@@ -328,7 +327,7 @@ export const FORM_FIELDS: FormProps[] = [
 export const CHARTER: CharterProps[] = [
   {
     id: 1,
-    title: "1. SUR L'IMPLICATION DE CHACUN",
+    title: "1. Sur l'implication de chacun",
     text: [
       "Chaque membre du groupe reste libre de participer ou de ne pas participer à l’élaboration d’un numéro. Il détermine son niveau de participation.",
       "Il est attendu que les engagements pris par chacun pour chaque numéro soient tenus.",
@@ -340,7 +339,7 @@ export const CHARTER: CharterProps[] = [
   },
   {
     id: 2,
-    title: "2. SUR LES RÔLES DE CHACUN",
+    title: "2. Sur les rôles de chacun",
     text: [
       "Rédacteur : réalise des articles",
       "Photographe : réalise des photos",
@@ -357,7 +356,7 @@ export const CHARTER: CharterProps[] = [
   },
   {
     id: 3,
-    title: "3. SUR NOS ÉCHANGES GROUPÉS",
+    title: "3. Sur nos échanges groupés",
     text: [
       "Les décisions sur le contenu doivent être prises en réunion, formalisées si besoin dans un compte-rendu ou un chemin de fer.",
       "Entre les réunions, chacun peut réfléchir à des propositions de modifications/ compléments quidevront être soumises au groupe en réunion pour être validées.",
@@ -367,7 +366,7 @@ export const CHARTER: CharterProps[] = [
   },
   {
     id: 4,
-    title: "4. SUR LES CHOIX DE CONTENU",
+    title: "4. Sur les choix de contenu",
     text: [
       "Chacun est libre d’exprimer son désaccord sur un contenu, dans un principe de liberté d’expression. Chaque point de vue doit être basé sur des arguments de fond.",
       "Nous partons du principe que chaque proposition de contenu (texte, photo, poème…) a de la valeur et doit pouvoir trouver sa place dans le journal, dans le numéro à en préparation ou l’un des suivants, avec des ajustements si nécessaire en fonction des observations étayées des autres membres du groupe.",
@@ -376,7 +375,7 @@ export const CHARTER: CharterProps[] = [
   },
   {
     id: 5,
-    title: "5. SUR LES ENVOIS ET RELECTURES DE CONTENUS",
+    title: "5. Sur les envois et relectures de contenus",
     text: [
       "Il est demandé au rédacteur de respecter les règles suivantes de production des écrits : \n – Conformité au chemin de fer : sujet, éventuellement angle, et calibrage de l’article \n – Prise en compte de règles journalistiques : \n    - Chaque article doit répondre aux 5W quant à l’information principale (what, why…), c’est-à-dire répondre aux questions quoi, pourquoi, qui, où, quand? \n     - Les informations doivent être vérifiées.Toute citation entre guillemets doit être attribuée.",
       "Le Rédacteur est signataire des articles, il reste responsable de ses productions mais doit se conformer aux limites qui s’appliquent au contenu",
@@ -385,7 +384,7 @@ export const CHARTER: CharterProps[] = [
   },
   {
     id: 6,
-    title: "6. SUR LES RETOURS SUR LA VERSION FINALE",
+    title: "6. Sur les retours sur la version finale",
     text: [
       "Le journal, une fois maquette, sera adressé à tous (via la liste mail) pour permettre à chacun de partager ses observations avant impression/diffusion.",
     ],
@@ -473,28 +472,28 @@ export const SECONDARY_DISTRIBUTION_PLACES: DistributionPlacesProps[] = [
   },
 ];
 
-export const SOCIAL_MEDIA: MediaProps[] = [
-  {
-    href: "https://www.facebook.com/Journal.Vuesdici",
-    icon: <FacebookIcon />,
-    label: "Lien vers la page Facebook de Vues d'ici.",
-  },
-  {
-    href: "https://www.google.fr/maps/place/Pl.+des+F%C3%AAtes,+75019+Paris/@48.8771718,2.3915075,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66dbfb478cde1:0x8bc8dca1c6be6a3d!8m2!3d48.8771683!4d2.3940824!16s%2Fg%2F122czk_y?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D",
-    icon: <GoogleIcon />,
-    label: "Lien vers la page Google Maps centrée sur la Place des Fêtes.",
-  },
-  {
-    href: "https://www.instagram.com/vues_d_ici_/",
-    icon: <InstagramIcon />,
-    label: "Lien vers la page Instagram de Vues d'ici.",
-  },
-  {
-    href: "https://www.helloasso.com/",
-    icon: <HelloAssoIcon />,
-    label: "Lien vers la page du site Hello Asso.",
-  },
-];
+// export const SOCIAL_MEDIA: MediaProps[] = [
+//   {
+//     href: "https://www.facebook.com/Journal.Vuesdici",
+//     icon: <FacebookIcon />,
+//     label: "Lien vers la page Facebook de Vues d'ici.",
+//   },
+//   {
+//     href: "https://www.google.fr/maps/place/Pl.+des+F%C3%AAtes,+75019+Paris/@48.8771718,2.3915075,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66dbfb478cde1:0x8bc8dca1c6be6a3d!8m2!3d48.8771683!4d2.3940824!16s%2Fg%2F122czk_y?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D",
+//     icon: <GoogleIcon />,
+//     label: "Lien vers la page Google Maps centrée sur la Place des Fêtes.",
+//   },
+//   {
+//     href: "https://www.instagram.com/vues_d_ici_/",
+//     icon: <InstagramIcon />,
+//     label: "Lien vers la page Instagram de Vues d'ici.",
+//   },
+//   {
+//     href: "https://www.helloasso.com/",
+//     icon: <HelloAssoIcon />,
+//     label: "Lien vers la page du site Hello Asso.",
+//   },
+// ];
 
 export const NAVBAR_LINKS: NavLinkProps[] = [
   {
