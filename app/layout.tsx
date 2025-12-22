@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { NavBar } from "./components/NavBar";
+import Footer from "./components/[Footer]/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
     default: "Vues d'ici - Journal de quartier",
   },
   description:
-    "L'actu locale par et pour les habitants. Vues d'ici est un journal et indépendant soutenu par les habitants des quartiers Belleville, Jourdain, Butts-Chaumonts et Place des Fêtes à Paris.",
+    "L'actu locale par et pour les habitants. Vues d'ici est un journal et indépendant soutenu par les habitants des quartiers Belleville, Jourdain, Buttes-Chaumonts et Place des Fêtes à Paris.",
 };
 
 export default function RootLayout({
@@ -33,7 +34,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NavBar />
-        <main>{children}</main>
+        {children}
+        <Footer />
       </body>
     </html>
   );
