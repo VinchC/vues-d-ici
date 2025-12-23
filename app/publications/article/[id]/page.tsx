@@ -14,9 +14,7 @@ export default async function ArticleDetailPage({ params }: { params: any }) {
 
   return (
     <>
-      <section className="section">
-        <ArticleComponent {...article} />
-      </section>
+      <ArticleComponent {...article} />
     </>
   );
 }

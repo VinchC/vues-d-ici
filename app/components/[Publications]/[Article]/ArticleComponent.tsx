@@ -9,32 +9,28 @@ export const ArticleComponent: any = (props: ArticleProps) => {
     (e) => e.title
   );
 
+  const publishDate: string = props.createdAt;
+  const date = new Date(publishDate).toLocaleDateString()
+
   return (
     <>
-      <section className="flex flex-col gap-0">
-        <div className="p-4 gap-2 w-full rounded-b-none m-0">
-          <div className="flex justify-between items-center">
-            <div>
-              <h2>{props.title}</h2>
-              <button className="categoryLink spacingMedium">{category}</button>
-              <p className="text-xs italic spacing">
-                Publié le {props.createdAt}
-              </p>
-            </div>
-            <Link
-              href={`/publications/journal/${props.newspaperId}`}
-              className="mediumButton"
-            >
-              Lire le journal
-            </Link>
-          </div>
+      <h1>{props.title}</h1>
+      <div className="flex justify-between items-center">
+        <div>
+          <p className="text-green-300">{category}</p>
+          <p className="text-xs italic spacing">Publié le {date}</p>
         </div>
-        <img src={props.picture} alt={props.alt} className="m-0 w-full" />
-        <div className="p-4 gap-2 w-full rounded-t-none m-0">
-          <p className="chapeau">{props.chapeau}</p>
-          <article className="textArticle">{props.text}</article>
+        <div className="bg-gray-400 text-black text-center align-middle w-40 h-8 border-2 border-purple-500 hover:border-purple-500/60 rounded-lg">
+          <Link href={`/publications/journal/${props.newspaperId}`} className="bg-gray-400 text-black text-center align-middle">
+            Lire le journal
+          </Link>
         </div>
-      </section>
+      </div>
+      <img src={props.picture} alt={props.alt} className="m-0 w-full" />
+      <div className="p-4 gap-2 w-full rounded-t-none m-0">
+        <p>{props.chapeau}</p>
+        <article>{props.text}</article>
+      </div>
     </>
   );
 };
