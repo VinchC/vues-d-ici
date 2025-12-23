@@ -22,7 +22,7 @@ export const ArticleComponent: any = (props: ArticleProps) => {
               </p>
             </div>
             <Link
-              href={`/publication/journal/${props.newspaperId}`}
+              href={`/publications/journal/${props.newspaperId}`}
               className="mediumButton"
             >
               Lire le journal
