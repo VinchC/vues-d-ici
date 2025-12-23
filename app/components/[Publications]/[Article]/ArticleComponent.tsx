@@ -3,7 +3,8 @@ import { CATEGORIES } from "@/data/data";
 import Image from "next/image";
 import Link from "next/link";
 
-export const ArticleComponent: unknown = (props: ArticleProps) => {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const ArticleComponent: any = (props: ArticleProps) => {
   const category = CATEGORIES.filter((e) => props.categoryId === e.id).map(
     (e) => e.title
   );
@@ -21,7 +22,7 @@ export const ArticleComponent: unknown = (props: ArticleProps) => {
               </p>
             </div>
             <Link
-              href={`/journals/${props.newspaperId}`}
+              href={`/publication/journal/${props.newspaperId}`}
               className="mediumButton"
             >
               Lire le journal

@@ -3,7 +3,8 @@
 import { ArticleProps } from "@/app/types";
 import Link from "next/link";
 
-export const ArticleCard = (props: ArticleProps) => {
+export const PublicationCard = (props: ArticleProps) => {
+  console.log(props);
   return (
     <div className="flex flex-col gap-4 shadow-md rounded-lg w-72 h-80 max-sm:w-80 border-purple-500 border-2">
       <img
@@ -15,9 +16,12 @@ export const ArticleCard = (props: ArticleProps) => {
         <p className="font-semibold">{props.title}</p>
         <p className="text-sm line-clamp-3">{props.chapeau}</p>
         <div className="bg-gray-400 text-black text-center w-24 h-8 border-2 border-purple-500 hover:border-purple-500/60 rounded-lg">
-        <Link href={`/publications/${props.id}`} >
-          Lire
-        </Link></div>
+          {props.categoryId == 6 ? (
+            <Link href={`/publications/journal/${props.id}`}>Lire</Link>
+          ) : (
+            <Link href={`/publications/article/${props.id}`}>Lire</Link>
+          )}
+        </div>
       </div>
     </div>
   );

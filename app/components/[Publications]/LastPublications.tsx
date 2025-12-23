@@ -1,5 +1,5 @@
 import { ARTICLES } from "../../../data/data";
-import { ArticleCard } from "./ArticleCard";
+import { ArticleCard } from "./PublicationCard";
 import Link from "next/link";
 
 export const LastArticles = () => {

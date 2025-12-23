@@ -4,7 +4,7 @@ import Search from "../components/utils/Search";
 import { useState } from "react";
 import { ARTICLES, CATEGORIES, JOURNALS } from "@/data/data";
 import { CategoryProps } from "../types";
-import { ArticleCard } from "../components/[Publications]/ArticleCard";
+import { PublicationCard } from "../components/[Publications]/PublicationCard";
 
 export default function ArticlesPage() {
   const [search, setSearch] = useState("");
@@ -78,18 +78,24 @@ export default function ArticlesPage() {
                 {category ? (
                   publicationsByCategory.length > 0 ? (
                     publicationsByCategory
-                      .sort((a, b) => Date.parse(b.createdAt) - Date.parse(a.createdAt))
+                      .sort(
+                        (a, b) =>
+                          Date.parse(b.createdAt) - Date.parse(a.createdAt)
+                      )
                       .map((publication, index) => (
-                        <ArticleCard key={index} {...publication} />
+                        <PublicationCard key={index} {...publication} />
                       ))
                   ) : (
                     <p>Aucun résultat</p>
                   )
                 ) : publications.length > 0 ? (
                   publications
-                    .sort((a, b) => Date.parse(b.createdAt) - Date.parse(a.createdAt))
+                    .sort(
+                      (a, b) =>
+                        Date.parse(b.createdAt) - Date.parse(a.createdAt)
+                    )
                     .map((publication, index) => (
-                      <ArticleCard key={index} {...publication} />
+                      <PublicationCard key={index} {...publication} />
                     ))
                 ) : (
                   <p>Aucun résultat</p>
