@@ -257,50 +257,50 @@ export const JOURNALS: JournalProps[] = [
       },
     ],
   },
-  {
-    id: 6,
-    title: "Journal n°6 - mai-juil. 2024",
-    picture: station.src,
-    alt: "Journal n°6",
-    chapeau:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...bibi",
-    createdAt: "1970-06-01T00:00:01Z",
-    categoryId: 6,
-    content: [
-      {
-        id: 1,
-        categoryName: "Actus et initiatives... pp. 4-6",
-        text: ["La maison de santé", "La médiathèque", "Librairie Boréalia"],
-      },
-      {
-        id: 2,
-        categoryName: "Le dossier... pp. 7-13",
-        text: [
-          "Elles et ils défendent une idée de Belleville : leurs visions, leurs combats",
-        ],
-      },
-      {
-        id: 3,
-        categoryName: "Rencontre... p. 14",
-        text: ["Digudus, artiste à Belleville, nulle part ailleurs"],
-      },
-      {
-        id: 4,
-        categoryName: "Mémoire... p. 15",
-        text: ["Quand Belleville intégra Paris"],
-      },
-      {
-        id: 5,
-        categoryName: "Lecture et Agenda... p. 15",
-        text: ["Le poète Jean-Luc Evens"],
-      },
-      {
-        id: 6,
-        categoryName: "Jeux... p. 16",
-        text: ["Photos énigmes"],
-      },
-    ],
-  },
+  // {
+  //   id: 6,
+  //   title: "Journal n°6 - mai-juil. 2024",
+  //   picture: station.src,
+  //   alt: "Journal n°6",
+  //   chapeau:
+  //     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...bibi",
+  //   createdAt: "1970-06-01T00:00:01Z",
+  //   categoryId: 6,
+  //   content: [
+  //     {
+  //       id: 1,
+  //       categoryName: "Actus et initiatives... pp. 4-6",
+  //       text: ["La maison de santé", "La médiathèque", "Librairie Boréalia"],
+  //     },
+  //     {
+  //       id: 2,
+  //       categoryName: "Le dossier... pp. 7-13",
+  //       text: [
+  //         "Elles et ils défendent une idée de Belleville : leurs visions, leurs combats",
+  //       ],
+  //     },
+  //     {
+  //       id: 3,
+  //       categoryName: "Rencontre... p. 14",
+  //       text: ["Digudus, artiste à Belleville, nulle part ailleurs"],
+  //     },
+  //     {
+  //       id: 4,
+  //       categoryName: "Mémoire... p. 15",
+  //       text: ["Quand Belleville intégra Paris"],
+  //     },
+  //     {
+  //       id: 5,
+  //       categoryName: "Lecture et Agenda... p. 15",
+  //       text: ["Le poète Jean-Luc Evens"],
+  //     },
+  //     {
+  //       id: 6,
+  //       categoryName: "Jeux... p. 16",
+  //       text: ["Photos énigmes"],
+  //     },
+  //   ],
+  // },
 ];
 
 export const FORM_FIELDS: FormProps[] = [
@@ -661,7 +661,7 @@ export const ARTICLES: ArticleProps[] = [
     text: `bubu Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum. \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum. \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum. \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum. \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum. \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.`,
     createdAt: "1970-01-01T00:00:00Z",
     categoryId: 1,
-    newspaperId: 1,
+    newspaperId: 5,
   },
   {
     id: 2,
@@ -672,8 +672,8 @@ export const ARTICLES: ArticleProps[] = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
     createdAt: "1970-02-01T00:00:00Z",
-    categoryId: 2,
-    newspaperId: 2,
+    categoryId: 1,
+    newspaperId: 1,
   },
   {
     id: 3,
@@ -684,8 +684,8 @@ export const ARTICLES: ArticleProps[] = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
     createdAt: "1970-04-01T00:00:00Z",
-    categoryId: 3,
-    newspaperId: 3,
+    categoryId: 1,
+    newspaperId: 2,
   },
   {
     id: 4,
@@ -696,8 +696,8 @@ export const ARTICLES: ArticleProps[] = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
     createdAt: "1970-03-01T00:00:00Z",
-    categoryId: 4,
-    newspaperId: 4,
+    categoryId: 2,
+    newspaperId: 3,
   },
   {
     id: 5,
@@ -708,8 +708,8 @@ export const ARTICLES: ArticleProps[] = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
     createdAt: "1970-03-01T00:00:01Z",
-    categoryId: 5,
-    newspaperId: 5,
+    categoryId: 2,
+    newspaperId: 4,
   },
   {
     id: 6,
@@ -720,8 +720,8 @@ export const ARTICLES: ArticleProps[] = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
     createdAt: "06/11/2024",
-    categoryId: 5,
-    newspaperId: 6,
+    categoryId: 2,
+    newspaperId: 5,
   },
   {
     id: 7,
@@ -732,7 +732,7 @@ export const ARTICLES: ArticleProps[] = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
     createdAt: "07/11/2024",
-    categoryId: 1,
+    categoryId: 3,
     newspaperId: 1,
   },
   {
@@ -744,7 +744,7 @@ export const ARTICLES: ArticleProps[] = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
     createdAt: "08/11/2024",
-    categoryId: 2,
+    categoryId: 3,
     newspaperId: 2,
   },
   {
@@ -780,7 +780,7 @@ export const ARTICLES: ArticleProps[] = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
     createdAt: "11/11/2024",
-    categoryId: 5,
+    categoryId: 4,
     newspaperId: 5,
   },
   {
@@ -792,8 +792,8 @@ export const ARTICLES: ArticleProps[] = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
     createdAt: "12/11/2024",
-    categoryId: 5,
-    newspaperId: 6,
+    categoryId: 4,
+    newspaperId: 1,
   },
   {
     id: 13,
@@ -804,8 +804,8 @@ export const ARTICLES: ArticleProps[] = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
     createdAt: "13/11/2024",
-    categoryId: 1,
-    newspaperId: 1,
+    categoryId: 5,
+    newspaperId: 2,
   },
   {
     id: 14,
@@ -816,8 +816,8 @@ export const ARTICLES: ArticleProps[] = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
     createdAt: "14/11/2024",
-    categoryId: 2,
-    newspaperId: 2,
+    categoryId: 5,
+    newspaperId: 3,
   },
   {
     id: 15,
@@ -828,43 +828,7 @@ export const ARTICLES: ArticleProps[] = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     text: "Lorem pops ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
     createdAt: "15/11/2024",
-    categoryId: 3,
-    newspaperId: 3,
-  },
-  {
-    id: 16,
-    picture: distribution.src,
-    alt: "Article à propos de ...",
-    title: "Titre de l'article 16",
-    chapeau:
-      "Lorem pops ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
-    createdAt: "16/11/2024",
-    categoryId: 4,
+    categoryId: 5,
     newspaperId: 4,
-  },
-  {
-    id: 17,
-    picture: station.src,
-    alt: "Article à propos de ...",
-    title: "Titre de l'article 17 pops",
-    chapeau:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
-    createdAt: "17/11/2024",
-    categoryId: 5,
-    newspaperId: 5,
-  },
-  {
-    id: 18,
-    picture: distribution.src,
-    alt: "Article à propos de ...",
-    title: "Titre de l'article 18 Pops",
-    chapeau:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
-    text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum. \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum. \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum. \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum. \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum. \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.`,
-    createdAt: "18/11/2024",
-    categoryId: 5,
-    newspaperId: 6,
   },
 ];
