@@ -4,35 +4,39 @@ import { ARTICLES } from "@/data/data";
 import { PublicationCard } from "../PublicationCard";
 
 export const JournalArticles = (props: JournalProps) => {
-  const articlesJournal = ARTICLES.filter(
-    (article: { newspaperId: number }) => article.newspaperId === props.id
-  );
+  const articlesJournal = ARTICLES.filter((e) => e.newspaperId == props.id);
 
   const minIndex = 1;
   const maxIndex = 6;
 
   return (
     <>
-      <section className="flex flex-col gap-0">
+      <section className="flex">
         <div className="p-4 gap-2">
           <h2>Dans cette édition</h2>
-          <div className="articlesGrid">
+          <div className="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-12">
             {articlesJournal
               .sort((a, b) => b.id - a.id)
               .map((articleJournal, index) => (
                 <PublicationCard key={index} {...articleJournal} />
               ))}
           </div>
-          <div className="flex justify-between">
+          <div className="flex justify-between mt-8">
             {props.id - 1 >= minIndex ? (
-              <Link href={`/journals/${props.id - 1}`} className="largeButton">
+              <Link
+                href={`/publications/journal/${props.id - 1}`}
+                className="bg-orange-500 text-black text-md text-center w-40 max-sm:w-32 max-sm:text-sm py-1 h-8 border-2 border-gray-500 hover:border-orange-500/60 rounded-lg"
+              >
                 Edition précédente
               </Link>
             ) : (
               <div></div>
             )}
             {props.id + 1 <= maxIndex ? (
-              <Link href={`/journals/${props.id + 1}`} className="largeButton">
+              <Link
+                href={`/publications/journal/${props.id + 1}`}
+                className="bg-orange-500 text-black text-center w-40 max-sm:w-32 max-sm:text-sm py-1 h-8 border-2 border-gray-500 hover:border-orange-500/60 rounded-lg"
+              >
                 Edition suivante
               </Link>
             ) : (
