@@ -1,5 +1,5 @@
 import { ARTICLES } from "../../../data/data";
-import { ArticleCard } from "./PublicationCard";
+import { PublicationCard } from "./PublicationCard";
 import Link from "next/link";
 
 export const LastArticles = () => {
@@ -12,7 +12,7 @@ export const LastArticles = () => {
             {ARTICLES.sort((a, b) => b.id - a.id)
               .slice(0, 6)
               .map((article, index) => (
-                <ArticleCard key={index} {...article} />
+                <PublicationCard key={index} {...article} />
               ))}
           </div>
           <div className="flex justify-center items-center">

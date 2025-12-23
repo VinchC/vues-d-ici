@@ -1,6 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import { ArticleProps } from "@/app/types";
 import { CATEGORIES } from "@/data/data";
-import Image from "next/image";
 import Link from "next/link";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -29,7 +29,7 @@ export const ArticleComponent: any = (props: ArticleProps) => {
             </Link>
           </div>
         </div>
-        <Image src={props.picture} alt={props.alt} className="m-0 w-full" />
+        <img src={props.picture} alt={props.alt} className="m-0 w-full" />
         <div className="p-4 gap-2 w-full rounded-t-none m-0">
           <p className="chapeau">{props.chapeau}</p>
           <article className="textArticle">{props.text}</article>

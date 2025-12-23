@@ -4,7 +4,7 @@ import { ArticleProps } from "@/app/types";
 import Link from "next/link";
 
 export const PublicationCard = (props: ArticleProps) => {
-  console.log(props);
+
   return (
     <div className="flex flex-col gap-4 shadow-md rounded-lg w-72 h-80 max-sm:w-80 border-purple-500 border-2">
       <img
