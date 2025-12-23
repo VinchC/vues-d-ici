@@ -78,7 +78,7 @@ export default function ArticlesPage() {
                 {category ? (
                   publicationsByCategory.length > 0 ? (
                     publicationsByCategory
-                      .sort((a, b) => b.id - a.id)
+                      .sort((a, b) => Date.parse(b.createdAt) - Date.parse(a.createdAt))
                       .map((publication, index) => (
                         <ArticleCard key={index} {...publication} />
                       ))
@@ -87,7 +87,7 @@ export default function ArticlesPage() {
                   )
                 ) : publications.length > 0 ? (
                   publications
-                    .sort((a, b) => b.id - a.id)
+                    .sort((a, b) => Date.parse(b.createdAt) - Date.parse(a.createdAt))
                     .map((publication, index) => (
                       <ArticleCard key={index} {...publication} />
                     ))
