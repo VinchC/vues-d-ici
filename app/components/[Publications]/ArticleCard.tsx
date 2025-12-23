@@ -15,7 +15,7 @@ export const ArticleCard = (props: ArticleProps) => {
         <p className="font-semibold">{props.title}</p>
         <p className="text-sm line-clamp-3">{props.chapeau}</p>
         <Link href={`/publications/${props.id}`} className="mediumButton">
-          Lire l&apos;article
+          Lire
         </Link>
       </div>
     </div>
