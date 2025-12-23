@@ -20,8 +20,8 @@ export const ArticleComponent: any = (props: ArticleProps) => {
           <p className="text-green-300">{category}</p>
           <p className="text-xs italic spacing">Publié le {date}</p>
         </div>
-        <div className="bg-gray-400 text-black text-center align-middle w-40 h-8 border-2 border-purple-500 hover:border-purple-500/60 rounded-lg">
-          <Link href={`/publications/journal/${props.newspaperId}`} className="bg-gray-400 text-black text-center align-middle">
+        <div className="bg-purple-500 text-black text-center align-middle w-40 h-8 border-2 border-purple-500 hover:bg-purple-500/60 rounded-lg">
+          <Link href={`/publications/journal/${props.newspaperId}`} className="text-black text-center align-middle">
             Lire le journal
           </Link>
         </div>
