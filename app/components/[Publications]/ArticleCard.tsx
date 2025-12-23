@@ -14,9 +14,10 @@ export const ArticleCard = (props: ArticleProps) => {
       <div className="px-4">
         <p className="font-semibold">{props.title}</p>
         <p className="text-sm line-clamp-3">{props.chapeau}</p>
-        <Link href={`/publications/${props.id}`} className="mediumButton">
+        <div className="bg-gray-400 text-black text-center w-24 h-8 border-2 border-purple-500 hover:border-purple-500/60 rounded-lg">
+        <Link href={`/publications/${props.id}`} >
           Lire
-        </Link>
+        </Link></div>
       </div>
     </div>
   );

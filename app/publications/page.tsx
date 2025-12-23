@@ -67,7 +67,7 @@ export default function ArticlesPage() {
                 {CATEGORIES.map((category, index) => (
                   <button
                     key={index}
-                    className="categoryLink"
+                    className="border-2 border-purple-500 rounded-lg w-36 h-16"
                     onClick={() => setCategory(category)}
                   >
                     {category.title}
