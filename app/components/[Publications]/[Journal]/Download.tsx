@@ -12,7 +12,7 @@ export default function Download(id: any) {
   };
   return (
     <>
-      <button onClick={onButtonClick} className="categoryLink">
+      <button onClick={onButtonClick} className="bg-blue-500 text-black text-md text-center w-40 max-sm:w-32 max-sm:text-sm py-1 h-8 border-2 border-gray-500 hover:bg-blue-500/60 rounded-lg">
         Télécharger le PDF
       </button>
     </>
