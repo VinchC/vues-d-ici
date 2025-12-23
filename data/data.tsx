@@ -41,6 +41,7 @@ export const JOURNALS: JournalProps[] = [
     chapeau:
       "Lorem bobo ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     createdAt: "1er novembre 2021",
+    categoryId: 6,
     content: [
       {
         id: 1,
@@ -88,6 +89,7 @@ export const JOURNALS: JournalProps[] = [
     chapeau:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     createdAt: "1er mai 2022",
+    categoryId: 6,
     content: [
       {
         id: 1,
@@ -131,6 +133,7 @@ export const JOURNALS: JournalProps[] = [
     chapeau:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     createdAt: "1er novembre 2022",
+        categoryId: 6,
     content: [
       {
         id: 1,
@@ -174,6 +177,7 @@ export const JOURNALS: JournalProps[] = [
     chapeau:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     createdAt: "1er mai 2023",
+        categoryId: 6,
     content: [
       {
         id: 1,
@@ -217,6 +221,7 @@ export const JOURNALS: JournalProps[] = [
     chapeau:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     createdAt: "1er décembre 2023",
+        categoryId: 6,
     content: [
       {
         id: 1,
@@ -260,6 +265,7 @@ export const JOURNALS: JournalProps[] = [
     chapeau:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...bibi",
     createdAt: "1er mai 2024",
+        categoryId: 6,
     content: [
       {
         id: 1,
@@ -573,9 +579,16 @@ export const CATEGORIES: CategoryProps[] = [
   },
   {
     id: 5,
-    picture: station.src,
+    picture: distribution.src,
     alt: "Image représentant la catégorie Actu du journal",
     title: "Actu du journal",
+    href: "/articles?category=",
+  },
+  {
+    id: 6,
+    picture: station.src,
+    alt: "Image représentant la catégorie Editions complètes",
+    title: "Editions complètes",
     href: "/articles?category=",
   },
 ];

@@ -7,6 +7,7 @@ export type DisplayContentProps = {
   dataTweNavActive?: string;
   ariaSelected: boolean;
 };
+
 export type JournalProps = {
   id: number;
   title: string;
@@ -14,19 +15,23 @@ export type JournalProps = {
   alt: string;
   chapeau: string;
   createdAt: string;
+  categoryId: number;
+
   content: Array<{ id: number; categoryName: string; text: Array<string> }>;
 };
 
 export type ArticleProps = {
   id: number;
+  title: string;
   picture: string;
   alt: string;
-  title: string;
   chapeau: string;
-  text?: string;
   createdAt: string;
   categoryId: number;
-  newspaperId: number;
+
+  newspaperId?: number;
+  text?: string;
+  content?: Array<{ id: number; categoryName: string; text: Array<string> }>;
 };
 
 export type FormProps = {

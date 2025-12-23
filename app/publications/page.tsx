@@ -1,18 +1,22 @@
 "use client";
 
-import Search from "../components/utils/Search";
+// import Search from "../components/utils/Search";
 import { useState } from "react";
 import { ARTICLES, CATEGORIES, JOURNALS } from "@/data/data";
 import { CategoryProps } from "../types";
 import { ArticleCard } from "../components/[Publications]/ArticleCard";
-import { JournalCard } from "../components/[Journal]/JournalCard";
+// import { JournalCard } from "../components/[Journal]/JournalCard";
 
 export default function ArticlesPage() {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState<null | CategoryProps>(null);
 
-  const articlesByCategory = ARTICLES.filter(
+  const articlesByCategory = 
+  ARTICLES.filter(
     (article) => article.categoryId === category?.id
+  ) || 
+  JOURNALS.filter(
+    (journal) => journal.categoryId === category?.id
   );
 
   const articles = ARTICLES.filter(
@@ -30,6 +34,10 @@ export default function ArticlesPage() {
         category.categoryName.toLowerCase().includes(search.toLowerCase())
       )
   );
+
+  const publications = articles.concat(journals)
+
+  console.log(articlesByCategory)
   // ||
   // journal.content
   // .map((e, index) => (e.text.find((f) => f.text2.toLowerCase()
@@ -54,7 +62,7 @@ export default function ArticlesPage() {
         >
           <section className="flex max-md:flex-col justify-center items-center gap-4 max-lg:mt-12n">
             <div className="p-4 gap-2">
-              <div className="flex justify-between items-center">
+              {/* <div className="flex justify-between items-center">
                 <h1>
                   {search
                     ? `Résultats de recherche pour ${search}`
@@ -65,9 +73,9 @@ export default function ArticlesPage() {
               <p className="mb-4">Rechercher le contenu d&apos;un article</p>
               <div className="mb-8">
                 <Search search={search} handleSearchUpdate={setSearch} />
-              </div>
-              <p className="mb-8">Filtrer par catégorie</p>
-              <div className="grid lg:grid-cols-5 sm:grid-cols-3 xs:grid-cols-2 gap-4 justify-items-center mb-8">
+              </div> */}
+              <h2>Filtrer par catégorie</h2>
+              <div className="grid lg:grid-cols-6 sm:grid-cols-3 xs:grid-cols-2 gap-4 justify-items-center mt-8 mb-8">
                 {CATEGORIES.map((category, index) => (
                   <button
                     key={index}
@@ -89,11 +97,11 @@ export default function ArticlesPage() {
                   ) : (
                     <p>Aucun résultat</p>
                   )
-                ) : articles.length > 0 ? (
-                  articles
+                ) : publications.length > 0 ? (
+                  publications
                     .sort((a, b) => b.id - a.id)
-                    .map((article, index) => (
-                      <ArticleCard key={index} {...article} />
+                    .map((publication, index) => (
+                      <ArticleCard key={index} {...publication} />
                     ))
                 ) : (
                   <p>Aucun résultat</p>
@@ -102,13 +110,13 @@ export default function ArticlesPage() {
             </div>
           </section>
         </div>
-        <div
+        {/* <div
           className="hidden opacity-0 transition-opacity duration-150 ease-linear data-twe-tab-active:block"
           id="nos-journaux"
           role="tabpanel"
           aria-labelledby="nos-journaux"
-        >
-          <section className="flex max-md:flex-col justify-center items-center gap-4 spacingMedium max-lg:mt-12">
+        > */}
+          {/* <section className="flex max-md:flex-col justify-center items-center gap-4 spacingMedium max-lg:mt-12">
             <div className="p-4 gap-2">
               <div className="flex justify-between items-center">
                 <h2>
@@ -132,8 +140,8 @@ export default function ArticlesPage() {
                 )}
               </div>
             </div>
-          </section>
-        </div>
+          </section> */}
+        {/* </div> */}
       </div>
     </>
   );
