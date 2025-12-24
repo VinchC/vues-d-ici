@@ -55,6 +55,7 @@ export type DistributionPlacesProps = {
   address?: string;
   city?: string;
   district?: string;
+  link?: string;
 };
 
 export type NavLinkProps = {

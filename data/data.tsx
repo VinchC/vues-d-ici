@@ -403,37 +403,40 @@ export const MAIN_DISTRIBUTION_PLACES: DistributionPlacesProps[] = [
     address: "24 bis rue Clavel",
     city: "Paris",
     district: "19ème",
+    link: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5248.1528121628435!2d2.381152076935638!3d48.87581997133458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66dc2741727d9%3A0xdacedf28fae0d123!2s24%20bis%20Rue%20Clavel%2C%2075019%20Paris!5e0!3m2!1sfr!2sfr!4v1766595085318!5m2!1sfr!2sfr",
   },
   {
     business_name: "Centre Paris Anim' Place des Fêtes",
     address: "2 rue des Lilas",
     city: "Paris",
     district: "19ème",
+    link: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5247.910935996512!2d2.393374576935787!3d48.878125471334954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66dbe606ab07f%3A0x718d1ff1505e2131!2s2%20Rue%20des%20Lilas%2C%2075019%20Paris!5e0!3m2!1sfr!2sfr!4v1766595743694!5m2!1sfr!2sfr",
   },
   {
     business_name: "Centre socio-culturel Archipelia",
     address: "17 rue des Envierges",
     city: "Paris",
     district: "20ème",
+    link: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.267375212451!2d2.384435676935477!3d48.87217927133409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66debbbb5a2c9%3A0xe7bdb397f446e6b4!2s17%20Rue%20des%20Envierges%2C%2075020%20Paris!5e0!3m2!1sfr!2sfr!4v1766595826816!5m2!1sfr!2sfr",
   },
-  {
-    business_name: "Bibliothèque Fessart",
-    address: "6 rue Fessart",
-    city: "Paris",
-    district: "19ème",
-  },
-  {
-    business_name: "MJC Les Hauts de Belleville",
-    address: "43 rue du Borrégo",
-    city: "Paris",
-    district: "20ème",
-  },
-  {
-    business_name: "Bibliothèque Oscar Wilde",
-    address: "12 rue du Télégraphe",
-    city: "Paris",
-    district: "20ème",
-  },
+  // {
+  //   business_name: "Bibliothèque Fessart",
+  //   address: "6 rue Fessart",
+  //   city: "Paris",
+  //   district: "19ème",
+  // },
+  // {
+  //   business_name: "MJC Les Hauts de Belleville",
+  //   address: "43 rue du Borrégo",
+  //   city: "Paris",
+  //   district: "20ème",
+  // },
+  // {
+  //   business_name: "Bibliothèque Oscar Wilde",
+  //   address: "12 rue du Télégraphe",
+  //   city: "Paris",
+  //   district: "20ème",
+  // },
 ];
 
 export const SECONDARY_DISTRIBUTION_PLACES: DistributionPlacesProps[] = [
