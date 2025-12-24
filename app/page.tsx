@@ -8,7 +8,7 @@ import { WhereToFind } from "./components/[Home]/WhereToFind";
 export default function Home() {
   return (
     <>
-      <div className="mx-auto w-full max-w-7xl p-4 py-6 lg:py-8">
+      <div className="p-4 gap-2">
         <Hero />
         <LastPublications />
         <WhereToFind />
