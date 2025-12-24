@@ -1,9 +1,5 @@
-import { FORM_FIELDS } from "../../data/data";
 import Link from "next/link";
-import FormComponent from "../components/[ContactForm]/FormComponent";
 import Contact from "../components/[ContactForm]/Contact";
-import PolicyAcceptance from "../components/utils/PolicyAcceptance";
-
 
 export default function ContactPage() {
   return (
@@ -26,14 +22,17 @@ export default function ContactPage() {
             au plus vite !
           </p>
           <Contact />
-          <div className="isolate py-12">
-            <form action="#" method="POST" className="mx-auto max-w-2xl">
+          {/* <div className="isolate py-12"> */}
+            {/* <form action="#" method="POST" className="mx-auto max-w-2xl">
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                 {FORM_FIELDS.map((e, index) => (
                   <FormComponent key={index} {...e} />
                 ))}
                 <div className="sm:col-span-2">
-                  <label htmlFor="message-subject" className="block font-semibold">
+                  <label
+                    htmlFor="message-subject"
+                    className="block font-semibold"
+                  >
                     Objet du message
                   </label>
                   <div className="relative">
@@ -67,16 +66,19 @@ export default function ContactPage() {
                       defaultValue={""}
                     />
                   </div>
-                </div>
-                <PolicyAcceptance />
-              </div>
-              <div className="mt-8 flex justify-center">
-                <button type="submit" className="bg-blue-500 text-black text-md text-center w-40 max-sm:w-32 max-sm:text-sm py-1 h-8 border-2 border-gray-500 hover:bg-blue-500/60 rounded-lg">
+                </div> */}
+                {/* <PolicyAcceptance /> */}
+              {/* </div> */}
+              {/* <div className="mt-8 flex justify-center">
+                <button
+                  type="submit"
+                  className="bg-blue-500 text-black text-md text-center w-40 max-sm:w-32 max-sm:text-sm py-1 h-8 border-2 border-gray-500 hover:bg-blue-500/60 rounded-lg"
+                >
                   Envoyer
                 </button>
-              </div>
-            </form>
-          </div>
+              </div> */}
+            {/* </form> */}
+          {/* </div> */}
         </div>
       </section>
     </>
