@@ -15,7 +15,7 @@ export const JournalArticles = (props: JournalProps) => {
           <h2>Dans cette édition</h2>
           <div className="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-12 justify-items-center">
             {articlesJournal
-              .sort((a, b) => b.id - a.id)
+              .sort((a, b) => Date.parse(b.createdAt) - Date.parse(a.createdAt))
               .map((articleJournal, index) => (
                 <PublicationCard key={index} {...articleJournal} />
               ))}

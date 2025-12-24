@@ -21,14 +21,16 @@ export const JournalComponent = (props: JournalProps) => {
                   <>
                     <li className="font-bold mt-4" key={index}>
                       {e.categoryName}
+                      <ul className="listStyle">
+                        {e.text.map((f, index2) => (
+                          <>
+                            <li className="text" key={index2}>
+                              {f}
+                            </li>
+                          </>
+                        ))}
+                      </ul>
                     </li>
-                    <ul className="listStyle">
-                      {e.text.map((f, index2) => (
-                        <li className="text" key={index2}>
-                          {f}
-                        </li>
-                      ))}
-                    </ul>
                   </>
                 ))}
               </ul>
