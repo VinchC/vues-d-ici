@@ -63,11 +63,11 @@ export default function ArticlesPage() {
                 <Search search={search} handleSearchUpdate={setSearch} />
               </div>
               <h2>Filtrer par catégorie</h2>
-              <div className="grid lg:grid-cols-6 sm:grid-cols-3 xs:grid-cols-2 gap-4 justify-items-center mt-8 mb-8">
+              <div className="grid lg:grid-cols-6 md:grid-cols-3 max-md:grid-cols-2 gap-4 justify-items-center mt-8 mb-8">
                 {CATEGORIES.map((category, index) => (
                   <button
                     key={index}
-                    className="border-2 border-purple-500 rounded-lg text-sm w-36 h-8 text-black bg-green-500 hover:bg-green-500/60"
+                    className="border-2 border-purple-500 rounded-lg text-sm max-sm:w-32 xs:text-xs w-36 h-8 max-sm:h-12 text-black bg-green-500 hover:bg-green-500/60"
                     onClick={() => setCategory(category)}
                   >
                     {category.title}

@@ -6,7 +6,7 @@ import Link from "next/link";
 export const PublicationCard = (props: ArticleProps) => {
 
   return (
-    <div className="flex flex-col gap-4 shadow-md rounded-lg w-68 h-80 max-sm:w-80 border-purple-500 border-2">
+    <div className="flex flex-col gap-4 shadow-md rounded-lg w-68 h-76 max-sm:w-80 max-sm:h-80 border-purple-500 border-2">
       <img
         src={props.picture}
         alt={props.alt}
