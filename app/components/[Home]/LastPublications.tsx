@@ -11,9 +11,9 @@ export default function LastPublications() {
 
   return (
     <>
-
-        <h2>Nos dernières publications</h2>
-        <section className="flex max-md:flex-col justify-center items-center gap-4 max-lg:mt-12n">
+      <section className="flex max-md:flex-col justify-center items-center gap-4 max-lg:mt-12n">
+        <div className="p-4 gap-2">
+          <h2>Nos dernières publications</h2>
           <div className="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-12 max-lg:gap-8 justify-items-center">
             {pathname == "/" && publicationsLast.length > 0 ? (
               publicationsLast
@@ -28,8 +28,8 @@ export default function LastPublications() {
               <p>Aucun résultat</p>
             )}
           </div>
-        </section>
-
+        </div>
+      </section>
     </>
   );
 }

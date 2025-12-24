@@ -3,7 +3,8 @@ import Link from "next/link";
 export const Hero = () => {
   return (
     <>
-      <section className="flex max-md:flex-col justify-center items-center gap-4 max-lg:mt-12 mb-8">
+      <div className="mx-auto w-full max-w-7xl p-4 py-6 lg:py-8">
+        <section>
         <div className="p-4 gap-2">
           <h2>
             L&apos;actu locale <span className="italic font-normal">par</span>{" "}
@@ -30,6 +31,7 @@ export const Hero = () => {
           </div>
         </div>
       </section>
+      </div>
     </>
   );
 };

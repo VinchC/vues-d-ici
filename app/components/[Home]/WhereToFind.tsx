@@ -26,10 +26,8 @@ export const WhereToFind = () => {
   }
   return (
     <>
-        <section
-          id="nous-trouver"
-          className="flex max-md:flex-col justify-center items-center gap-4 max-lg:mt-12n"
-        >
+      <div className="mx-auto w-full max-w-7xl p-4 py-6 lg:py-8">
+        <section id="nous-trouver">
           <div className="p-4 gap-2">
             <h2>Où trouver le journal ?</h2>
             <p>
@@ -81,6 +79,7 @@ export const WhereToFind = () => {
             </div>
           </div>
         </section>
+      </div>
     </>
   );
 };
