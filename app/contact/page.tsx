@@ -1,7 +1,9 @@
 import { FORM_FIELDS } from "../../data/data";
 import Link from "next/link";
 import FormComponent from "../components/[ContactForm]/FormComponent";
+import Contact from "../components/[ContactForm]/Contact";
 import PolicyAcceptance from "../components/utils/PolicyAcceptance";
+
 
 export default function ContactPage() {
   return (
@@ -23,6 +25,7 @@ export default function ContactPage() {
             ou remplissez le formulaire ci-dessous et nous reviendrons vers vous
             au plus vite !
           </p>
+          <Contact />
           <div className="isolate py-12">
             <form action="#" method="POST" className="mx-auto max-w-2xl">
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
