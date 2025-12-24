@@ -4,7 +4,7 @@ export const NavBar = () => {
   return (
     <header className="top-0 h-16 border-b-2 border-background z-50">
       <nav className="fixed w-full z-20 top-0 start-0 border-b border-default">
-        <div className="bg-gray-500 flex flex-wrap items-center justify-between mx-auto p-4">
+        <div className="bg-gray-200 text-black flex flex-wrap items-center justify-between mx-auto p-4">
           <Link
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
@@ -128,7 +128,7 @@ export const NavBar = () => {
               <li>
                 <a
                   href="/publications"
-                  className="block py-2 px-3 text-white bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
+                  className="block py-2 px-3 bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
                   aria-current="page"
                 >
                   Publications

@@ -1,10 +1,10 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
 const Search = ({
   search,
   handleSearchUpdate,
 }: {
   search?: string;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   handleSearchUpdate?: any;
 }) => {
   return (
