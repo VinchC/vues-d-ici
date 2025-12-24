@@ -1,15 +1,17 @@
 "use client";
 
-import Search from "../components/utils/Search";
 import { useState } from "react";
 import { ARTICLES, CATEGORIES, JOURNALS } from "@/data/data";
-import { CategoryProps } from "../types";
+import { CategoryProps } from "@/app/types";
+import { usePathname } from "next/navigation";
+import Search from "../components/utils/Search";
 import { PublicationCard } from "../components/[Publications]/PublicationCard";
 
-export default function ArticlesPage() {
+export default function Publications() {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState<null | CategoryProps>(null);
 
+  const pathname = usePathname();
   const articlesByCategory = ARTICLES.filter(
     (article) => article.categoryId === category?.id
   );
@@ -37,6 +39,7 @@ export default function ArticlesPage() {
   );
 
   const publications = articles.concat(journals);
+  const publicationsLast = articles.concat(journals).slice(0, 6);
 
   return (
     <>
@@ -75,19 +78,26 @@ export default function ArticlesPage() {
                 ))}
               </div>
               <div className="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-12 max-lg:gap-8 justify-items-center">
-                {category ? (
+                {pathname == "/" && publicationsLast.length > 0 ? (
+                  publicationsLast
+                    .sort(
+                      (a, b) =>
+                        Date.parse(b.createdAt) - Date.parse(a.createdAt)
+                    )
+                    .map((publication, index) => (
+                      <PublicationCard key={index} {...publication} />
+                    ))
+                ) : pathname != "/" &&
+                  category &&
                   publicationsByCategory.length > 0 ? (
-                    publicationsByCategory
-                      .sort(
-                        (a, b) =>
-                          Date.parse(b.createdAt) - Date.parse(a.createdAt)
-                      )
-                      .map((publication, index) => (
-                        <PublicationCard key={index} {...publication} />
-                      ))
-                  ) : (
-                    <p>Aucun résultat</p>
-                  )
+                  publicationsByCategory
+                    .sort(
+                      (a, b) =>
+                        Date.parse(b.createdAt) - Date.parse(a.createdAt)
+                    )
+                    .map((publication, index) => (
+                      <PublicationCard key={index} {...publication} />
+                    ))
                 ) : publications.length > 0 ? (
                   publications
                     .sort(

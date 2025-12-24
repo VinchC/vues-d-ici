@@ -29,10 +29,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr">
+    <html lang="fr" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <NavBar />
-        <main id="maincontent">{children}</main>;
+        {children}
         <Footer />
       </body>
     </html>

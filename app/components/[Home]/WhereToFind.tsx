@@ -27,7 +27,7 @@ export const WhereToFind = () => {
   return (
     <>
       <div id="nous-trouver">
-        <section className="section">
+        <section className="flex max-md:flex-col justify-center items-center gap-4 max-lg:mt-12n">
           <div className="cardBase">
             <h2>Où trouver le journal ?</h2>
             <p className="paragraph">

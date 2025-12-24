@@ -2,16 +2,18 @@
 
 import { BackTheJournal } from "./components/[Home]/BackTheJournal";
 import { Hero } from "./components/[Home]/Hero";
+import LastPublications from "./components/[Home]/LastPublications";
 import { WhereToFind } from "./components/[Home]/WhereToFind";
-import { LastArticles } from "./components/[Publications]/[Article]/LastArticles";
 
 export default function Home() {
   return (
     <>
-      <Hero />
-      <LastArticles />
-      <WhereToFind />
-      <BackTheJournal />
+      <div className="mx-auto w-full max-w-7xl p-4 py-6 lg:py-8">
+        <Hero />
+        <LastPublications />
+        <WhereToFind />
+        <BackTheJournal />
+      </div>
     </>
   );
 }
