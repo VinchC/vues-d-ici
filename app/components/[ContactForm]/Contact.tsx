@@ -97,10 +97,10 @@ const Contact: FC = () => {
               {...register("subject", { required: true })}
             >
               <option value="">--Choisissez un sujet--</option>
-              <option value="join">Adhésion</option>
-              <option value="ad">Encart publicitaire</option>
-              <option value="event">Evènement</option>
-              <option value="other">Autre</option>
+              <option value="Adhésion">Adhésion</option>
+              <option value="Encart publicitaire">Encart publicitaire</option>
+              <option value="Evènement">Evènement</option>
+              <option value="Autre">Autre</option>
             </select>
           </div>
           <div className="mb-8">
