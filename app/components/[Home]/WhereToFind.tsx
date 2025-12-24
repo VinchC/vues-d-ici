@@ -26,11 +26,13 @@ export const WhereToFind = () => {
   }
   return (
     <>
-      <div id="nous-trouver">
-        <section className="flex max-md:flex-col justify-center items-center gap-4 max-lg:mt-12n">
-          <div className="cardBase">
+        <section
+          id="nous-trouver"
+          className="flex max-md:flex-col justify-center items-center gap-4 max-lg:mt-12n"
+        >
+          <div className="p-4 gap-2">
             <h2>Où trouver le journal ?</h2>
-            <p className="paragraph">
+            <p>
               A chaque parution, vous pouvez vous servir gratuitement dans un
               des lieux répartis sur le quartier. Les points de collecte
               principaux sont approvisionnés prioritairement.
@@ -79,7 +81,6 @@ export const WhereToFind = () => {
             </div>
           </div>
         </section>
-      </div>
     </>
   );
 };

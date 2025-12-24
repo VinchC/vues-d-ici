@@ -3,18 +3,18 @@ import Link from "next/link";
 export const Hero = () => {
   return (
     <>
-      <div className="mx-auto w-full max-w-7xl p-4 py-6 lg:py-8">
-        <div className="">
-          <h2 className="text-4xl max-md:text-3xl font-semibold spacing">
+      <section className="flex max-md:flex-col justify-center items-center gap-4 max-lg:mt-12 mb-8">
+        <div className="p-4 gap-2">
+          <h2>
             L&apos;actu locale <span className="italic font-normal">par</span>{" "}
             et <span className="italic font-normal">pour</span> les habitants !
           </h2>
-          <p>
+          <p className="mt-8">
             Vues d&apos;ici est un journal gratuit et indépendant soutenu par
-            les habitants des quartiers Belleville, Jourdain, Buttes-Chaumonts
+            les habitants des quartiers Belleville, Jourdain, Buttes-Chaumont
             et Place des Fêtes à Paris.
           </p>
-          <div className="flex justify-evenly">
+          <div className="flex justify-evenly mt-8">
             <Link
               href="/publications?categoryId=6"
               className="bg-yellow-300 hover:bg-yellow-300/60 text-black p-2 rounded-xl w-48 text-center"
@@ -29,7 +29,7 @@ export const Hero = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };
