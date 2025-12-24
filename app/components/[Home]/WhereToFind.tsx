@@ -10,7 +10,7 @@ import DownAccordionIcon from "../icons/DownAccordionIcon";
 
 export const WhereToFind = () => {
   const [open, setOpen] = useState(false);
-  const [chosenPlace, setChosenPlace] = useState();
+  const [chosenPlace, setChosenPlace] = useState<string | undefined>();
 
   function toggleAccordion() {
     const content = document.getElementById("secondary");
