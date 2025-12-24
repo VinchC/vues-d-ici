@@ -10,7 +10,7 @@ import DownAccordionIcon from "../icons/DownAccordionIcon";
 
 export const WhereToFind = () => {
   const [open, setOpen] = useState(false);
-  const [chosenPlace, setChosenPlace] = useState("");
+  const [chosenPlace, setChosenPlace] = useState();
 
   function toggleAccordion() {
     const content = document.getElementById("secondary");
@@ -36,46 +36,48 @@ export const WhereToFind = () => {
               des lieux répartis sur le quartier. Les points de collecte
               principaux sont approvisionnés prioritairement.
             </p>
-            <div className="flex max-sm:flex-col-reverse items-center max-sm:items-start mb-8">
-                <h3 className="h3Title">Points de collecte principaux</h3>
-              <div className="flex-2 flex flex-col gap-2">
-                <div>
-                  {MAIN_DISTRIBUTION_PLACES.map((place, index) => (
-                    <>
-                      <div key={index}>
-                        <button onClick={() => setChosenPlace(place.link)}>
-                          {place.business_name}
-                        </button>
-                        <p className="text">
-                          {place.address}, {place.city} {place.district}
-                        </p>
-                      </div>
-                    </>
-                  ))}
-                </div>
-                <div className="flex-3 flex justify-around items-center max-md:m-auto ml-auto">
-                  {chosenPlace ? (
-                    <iframe
-                      src={chosenPlace}
-                      width="600"
-                      height="450"
-                      style={{ marginRight: 1 + "em" }}
-                      allowFullScreen
-                      loading="lazy"
-                      referrerPolicy="no-referrer-when-downgrade"
-                    ></iframe>
-                  ) : (
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10495.229275063457!2d2.3662814078125094!3d48.88094960000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66dc6143ed387%3A0xf26bed6076959491!2sParc%20des%20Buttes-Chaumont!5e0!3m2!1sfr!2sfr!4v1766596341521!5m2!1sfr!2sfr"
-                      width="600"
-                      height="450"
-                      style={{ marginRight: 1 + "em" }}
-                      allowFullScreen
-                      loading="lazy"
-                      referrerPolicy="no-referrer-when-downgrade"
-                    ></iframe>
-                  )}
-                </div>
+            <h3 className="mt-8">Points de collecte principaux</h3>
+            <p>
+              Cliquer sur le <span className="font-bold">nom de l&apos;établissement</span> pour l&apos;afficher
+              sur la carte.
+            </p>
+            <div className="flex max-sm:flex-col-reverse items-center max-sm:items-start mb-8 mt-8">
+              <div className="flex-2">
+                {MAIN_DISTRIBUTION_PLACES.map((place, index) => (
+                  <>
+                    <div key={index}>
+                      <button onClick={() => setChosenPlace(place.link)} className="font-bold">
+                        {place.business_name}
+                      </button>
+                      <p className="text">
+                        {place.address}, {place.city} {place.district}
+                      </p>
+                    </div>
+                  </>
+                ))}
+              </div>
+              <div className="flex-3 flex justify-around items-center max-md:m-auto ml-auto">
+                {chosenPlace ? (
+                  <iframe
+                    src={chosenPlace}
+                    width="600"
+                    height="450"
+                    style={{ marginRight: 1 + "em" }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                ) : (
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10495.229275063457!2d2.3662814078125094!3d48.88094960000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66dc6143ed387%3A0xf26bed6076959491!2sParc%20des%20Buttes-Chaumont!5e0!3m2!1sfr!2sfr!4v1766596341521!5m2!1sfr!2sfr"
+                    width="600"
+                    height="450"
+                    style={{ marginRight: 1 + "em" }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                )}
               </div>
             </div>
             <button

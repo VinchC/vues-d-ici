@@ -419,24 +419,27 @@ export const MAIN_DISTRIBUTION_PLACES: DistributionPlacesProps[] = [
     district: "20ème",
     link: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.267375212451!2d2.384435676935477!3d48.87217927133409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66debbbb5a2c9%3A0xe7bdb397f446e6b4!2s17%20Rue%20des%20Envierges%2C%2075020%20Paris!5e0!3m2!1sfr!2sfr!4v1766595826816!5m2!1sfr!2sfr",
   },
-  // {
-  //   business_name: "Bibliothèque Fessart",
-  //   address: "6 rue Fessart",
-  //   city: "Paris",
-  //   district: "19ème",
-  // },
-  // {
-  //   business_name: "MJC Les Hauts de Belleville",
-  //   address: "43 rue du Borrégo",
-  //   city: "Paris",
-  //   district: "20ème",
-  // },
-  // {
-  //   business_name: "Bibliothèque Oscar Wilde",
-  //   address: "12 rue du Télégraphe",
-  //   city: "Paris",
-  //   district: "20ème",
-  // },
+  {
+    business_name: "Bibliothèque Fessart",
+    address: "6 rue Fessart",
+    city: "Paris",
+    district: "19ème",
+    link: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.0514934402017!2d2.3856191767568165!3d48.87629489944584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66dc1ccb7d26b%3A0xf25510e4f0b3d80b!2s6%20Rue%20Fessart%2C%2075019%20Paris!5e0!3m2!1sfr!2sfr!4v1766598819689!5m2!1sfr!2sfr",
+  },
+  {
+    business_name: "MJC Les Hauts de Belleville",
+    address: "43 rue du Borrégo",
+    city: "Paris",
+    district: "20ème",
+    link: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.231810743399!2d2.397856976756662!3d48.87285729968794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d97a0e00bcb%3A0x4f86684bb38cb92c!2s43%20Rue%20du%20Borr%C3%A9go%2C%2075020%20Paris!5e0!3m2!1sfr!2sfr!4v1766598854846!5m2!1sfr!2sfr",
+  },
+  {
+    business_name: "Bibliothèque Oscar Wilde",
+    address: "12 rue du Télégraphe",
+    city: "Paris",
+    district: "20ème",
+    link: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.268050359912!2d2.3975108767566446!3d48.872166399736564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d970fb67421%3A0xeefa04683cc0dbc0!2s12%20Rue%20du%20T%C3%A9l%C3%A9graphe%2C%2075020%20Paris!5e0!3m2!1sfr!2sfr!4v1766598890136!5m2!1sfr!2sfr",
+  },
 ];
 
 export const SECONDARY_DISTRIBUTION_PLACES: DistributionPlacesProps[] = [
