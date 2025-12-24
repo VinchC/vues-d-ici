@@ -7,7 +7,6 @@ import Charter from "../components/[Association]/Charter";
 export default function AssociationPage() {
   return (
     <>
-      <main>
         <div className="mx-auto w-full max-w-7xl p-4 py-6 lg:py-8">
           <section>
             <h1 className="">L&apos;association Vues d&apos;ici</h1>
@@ -54,7 +53,6 @@ export default function AssociationPage() {
             ))}
           </section>
         </div>
-      </main>
     </>
   );
 }

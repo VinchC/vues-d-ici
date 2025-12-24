@@ -4,9 +4,9 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="w-full z-20 start-0 ">
+    <footer className="w-full z-20 start-0">
       <div className="">
-        <div className="bg-gray-500 bottom-0 start-0 border-b border-default mx-auto p-4 py-6 lg:py-8">
+        <div className="bg-gray-200 text-black bottom-0 start-0 border-b border-default mx-auto p-8 py-6 lg:py-8">
           <div className="flex justify-between max-md:block">
             <div>
               <div className="mb-6">
