@@ -14,6 +14,8 @@
     "@radix-ui/react-accessible-icon": "^1.1.8",
     "@types/nodemailer": "^7.0.4",
     "axios": "^1.13.2",
+    "embla-carousel-autoplay": "^8.6.0",
+    "embla-carousel-react": "^8.6.0",
     "flowbite": "^4.0.1",
     "lucide-react": "^0.562.0",
     "next": "16.1.0",

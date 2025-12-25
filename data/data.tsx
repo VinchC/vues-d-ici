@@ -11,10 +11,12 @@ import {
   JournalProps,
   DisplayContentProps,
   AssociationProps,
+  CarouselPicturesProps,
 } from "../app/types";
 
 import distribution from "@/public/images/distribution_jeunes_ambitieux.jpg";
 import station from "@/public/images/station_serge_gainsbourg.jpg";
+import playground from "@/public/images/inauguration_playground_2.jpg";
 
 export const DISPLAY_CONTENT: DisplayContentProps[] = [
   {
@@ -602,6 +604,26 @@ export const CATEGORIES: CategoryProps[] = [
     alt: "Image représentant la catégorie Editions complètes",
     title: "Editions complètes",
     href: "/articles?category=",
+  },
+];
+export const CAROUSELPICTURES: CarouselPicturesProps[] = [
+  {
+    id: 1,
+    picture: distribution.src,
+    alt: "Distribution aux jeunes ambitieux",
+    title: "Distribution aux jeunes ambitieux",
+  },
+  {
+    id: 2,
+    picture: station.src,
+    alt: "Station de métro Serge Gainsbourg",
+    title: "Station de métro Serge Gainsbourg",
+  },
+  {
+    id: 3,
+    picture: playground.src,
+    alt: "Inauguration du playground de la Place des Fêtes",
+    title: "Inauguration du playground de la Place des Fêtes",
   },
 ];
 

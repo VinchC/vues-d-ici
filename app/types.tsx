@@ -74,6 +74,13 @@ export type CategoryProps = {
   href: string;
 };
 
+export type CarouselPicturesProps = {
+  id: number;
+  title: string;
+  picture: string;
+  alt: string;
+};
+
 export type CarouselSliderProps = {
   data_twe_slide: string;
   path_d: string;
