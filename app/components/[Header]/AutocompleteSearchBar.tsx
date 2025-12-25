@@ -4,25 +4,16 @@ import { ARTICLES, JOURNALS } from "@/data/data";
 import { useState, useEffect, useRef } from "react";
 import SearchInput from "./SearchInput";
 import ProductList from "./ProductList";
+import { Publication } from "@/app/types";
 
-type Publication = {
-  id: number;
-  title: string;
-  text?: string;
-  chapeau?: string;
-  link: string;
-};
 
 const AutocompleteSearchBar = () => {
   const [query, setQuery] = useState("");
-  // const [products, setProducts] = useState<Publication[]>([]);
   const [id, setId] = useState<number>(-1);
   const [searchResults, setSearchResults] = useState<Publication[]>([]);
   const inputRef = useRef<HTMLInputElement>(null);
 
   const publications = ARTICLES.concat(JOURNALS);
-
-  console.log(publications);
 
   const handleQueryChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setQuery(event.target.value);
@@ -54,8 +45,7 @@ const AutocompleteSearchBar = () => {
       );
     } else if (event.key === "Enter") {
       if (id !== -1) {
-        const selectedProduct = searchResults[id];
-        // alert(`You selected ${selectedProduct.title}`);
+        // const selectedProduct = searchResults[id];
         setQuery("");
         setId(-1);
         setSearchResults([]);
@@ -63,13 +53,12 @@ const AutocompleteSearchBar = () => {
     }
   };
 
-  const handleProductClick = (publication: Publication) => {
-    alert(`You selected ${publication.title}`);
+  const handleProductClick = () => {
     setQuery("");
     setId(-1);
   };
 
-  const scrollActiveProductIntoView = (index: Publication) => {
+  const scrollActiveProductIntoView = (index: Publication["id"]) => {
     const activeProduct = document.getElementById(`product-${index}`);
     if (activeProduct) {
       activeProduct.scrollIntoView({

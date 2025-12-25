@@ -99,3 +99,11 @@ export type AssociationProps = {
   text: string;
   textButton: string;
 };
+
+export type Publication = {
+  id: number;
+  title: string;
+  text?: string;
+  chapeau?: string;
+  link: string;
+};

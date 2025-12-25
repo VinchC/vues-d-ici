@@ -1,17 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
-
-import { ARTICLES, JOURNALS } from "@/data/data";
+import { Publication } from "@/app/types";
 import Link from "next/link";
-
-const publications = ARTICLES.concat(JOURNALS);
-
-console.log(publications);
-
-type Publication = {
-  id: number;
-  title: string;
-  link: string;
-};
 
 type PublicationListProps = {
   publications: Publication[];
