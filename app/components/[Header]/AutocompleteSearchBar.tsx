@@ -10,6 +10,7 @@ type Publication = {
   title: string;
   text?: string;
   chapeau?: string;
+  link: string;
 };
 
 const AutocompleteSearchBar = () => {

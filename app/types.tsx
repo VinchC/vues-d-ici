@@ -16,6 +16,7 @@ export type JournalProps = {
   chapeau: string;
   createdAt: string;
   categoryId: number;
+  link: string;
   content: Array<{ id: number; categoryName: string; text: Array<string> }>;
 };
 
@@ -29,6 +30,7 @@ export type ArticleProps = {
   categoryId: number;
   newspaperId?: number;
   text?: string;
+  link: string;
 };
 
 export type FormProps = {

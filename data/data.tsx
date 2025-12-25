@@ -34,7 +34,7 @@ export const DISPLAY_CONTENT: DisplayContentProps[] = [
 
 export const JOURNALS: JournalProps[] = [
   {
-    id: 100,
+    id: 101,
     title: "Journal n°1 - nov.-déc. 2021",
     picture: distribution.src,
     alt: "Journal n°1",
@@ -42,6 +42,7 @@ export const JOURNALS: JournalProps[] = [
       "Lorem bobo ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     createdAt: "1970-01-01T00:00:01Z",
     categoryId: 6,
+    link: "/journal/",
     content: [
       {
         id: 1,
@@ -90,6 +91,7 @@ export const JOURNALS: JournalProps[] = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     createdAt: "1970-02-01T00:00:01Z",
     categoryId: 6,
+    link: "/journal/",
     content: [
       {
         id: 1,
@@ -134,6 +136,7 @@ export const JOURNALS: JournalProps[] = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     createdAt: "1970-03-01T00:00:01Z",
     categoryId: 6,
+    link: "/journal/",
     content: [
       {
         id: 1,
@@ -178,6 +181,7 @@ export const JOURNALS: JournalProps[] = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     createdAt: "1970-04-01T00:00:01Z",
     categoryId: 6,
+    link: "/journal/",
     content: [
       {
         id: 1,
@@ -222,6 +226,7 @@ export const JOURNALS: JournalProps[] = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     createdAt: "1970-05-01T00:00:01Z",
     categoryId: 6,
+    link: "/journal/",
     content: [
       {
         id: 1,
@@ -266,6 +271,7 @@ export const JOURNALS: JournalProps[] = [
   //     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...bibi",
   //   createdAt: "1970-06-01T00:00:01Z",
   //   categoryId: 6,
+  // link: "/journal/",
   //   content: [
   //     {
   //       id: 1,
@@ -668,6 +674,7 @@ export const ARTICLES: ArticleProps[] = [
     createdAt: "1970-01-01T00:00:00Z",
     categoryId: 1,
     newspaperId: 5,
+    link: "/article/",
   },
   {
     id: 2,
@@ -680,6 +687,7 @@ export const ARTICLES: ArticleProps[] = [
     createdAt: "1970-02-01T00:00:00Z",
     categoryId: 1,
     newspaperId: 1,
+    link: "/article/",
   },
   {
     id: 3,
@@ -692,6 +700,7 @@ export const ARTICLES: ArticleProps[] = [
     createdAt: "1970-04-01T00:00:00Z",
     categoryId: 1,
     newspaperId: 2,
+    link: "/article/",
   },
   {
     id: 4,
@@ -704,6 +713,7 @@ export const ARTICLES: ArticleProps[] = [
     createdAt: "1970-03-01T00:00:00Z",
     categoryId: 2,
     newspaperId: 3,
+    link: "/article/",
   },
   {
     id: 5,
@@ -716,6 +726,7 @@ export const ARTICLES: ArticleProps[] = [
     createdAt: "1970-03-01T00:00:01Z",
     categoryId: 2,
     newspaperId: 4,
+    link: "/article/",
   },
   {
     id: 6,
@@ -728,6 +739,7 @@ export const ARTICLES: ArticleProps[] = [
     createdAt: "06/11/2024",
     categoryId: 2,
     newspaperId: 5,
+    link: "/article/",
   },
   {
     id: 7,
@@ -740,6 +752,7 @@ export const ARTICLES: ArticleProps[] = [
     createdAt: "07/11/2024",
     categoryId: 3,
     newspaperId: 1,
+    link: "/article/",
   },
   {
     id: 8,
@@ -752,6 +765,7 @@ export const ARTICLES: ArticleProps[] = [
     createdAt: "08/11/2024",
     categoryId: 3,
     newspaperId: 2,
+    link: "/article/",
   },
   {
     id: 9,
@@ -764,6 +778,7 @@ export const ARTICLES: ArticleProps[] = [
     createdAt: "09/11/2024",
     categoryId: 3,
     newspaperId: 3,
+    link: "/article/",
   },
   {
     id: 10,
@@ -776,6 +791,7 @@ export const ARTICLES: ArticleProps[] = [
     createdAt: "10/11/2024",
     categoryId: 4,
     newspaperId: 4,
+    link: "/article/",
   },
   {
     id: 11,
@@ -788,6 +804,7 @@ export const ARTICLES: ArticleProps[] = [
     createdAt: "11/11/2024",
     categoryId: 4,
     newspaperId: 5,
+    link: "/article/",
   },
   {
     id: 12,
@@ -800,6 +817,7 @@ export const ARTICLES: ArticleProps[] = [
     createdAt: "12/11/2024",
     categoryId: 4,
     newspaperId: 1,
+    link: "/article/",
   },
   {
     id: 13,
@@ -812,6 +830,7 @@ export const ARTICLES: ArticleProps[] = [
     createdAt: "13/11/2024",
     categoryId: 5,
     newspaperId: 2,
+    link: "/article/",
   },
   {
     id: 14,
@@ -824,6 +843,7 @@ export const ARTICLES: ArticleProps[] = [
     createdAt: "14/11/2024",
     categoryId: 5,
     newspaperId: 3,
+    link: "/article/",
   },
   {
     id: 15,
@@ -836,5 +856,6 @@ export const ARTICLES: ArticleProps[] = [
     createdAt: "15/11/2024",
     categoryId: 5,
     newspaperId: 4,
+    link: "/article/",
   },
 ];
