@@ -219,7 +219,7 @@ export const JOURNALS: JournalProps[] = [
   },
   {
     id: 105,
-    title: "Journal n°5 - déc. 2023-jan. 2024",
+    title: "Journal n°5 - déc. 23-jan. 24",
     picture: distribution.src,
     alt: "Journal n°5",
     chapeau:

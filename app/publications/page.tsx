@@ -51,7 +51,7 @@ export default function Publications() {
               : "Toutes les publications"}
           </h1>
 
-          <p className="mb-4">Rechercher le contenu d&apos;un article</p>
+          <p className="mb-4">Rechercher le contenu d&apos;un article ou d&apos;un journal</p>
           <div className="mb-8 mt-4">
             <Search search={search} handleSearchUpdate={setSearch} />
           </div>
