@@ -2,9 +2,9 @@
 
 import { ARTICLES, JOURNALS } from "@/data/data";
 import { useState, useEffect, useRef } from "react";
-import SearchInput from "./SearchInput";
 import { Publication } from "@/app/types";
-import ResultList from "./ResultsList";
+import ResultList from "../utils/ResultsList";
+import SearchInput from "./SearchInput";
 
 export default function SearchBar() {
   const [query, setQuery] = useState("");
