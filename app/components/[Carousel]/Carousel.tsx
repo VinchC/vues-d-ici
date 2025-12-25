@@ -19,7 +19,6 @@ const Carousel: React.FC<PropType> = (props) => {
   const { slides, options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()]);
 
-  console.log(slides);
   const onNavButtonClick = useCallback((emblaApi: EmblaCarouselType) => {
     const autoplay = emblaApi?.plugins()?.autoplay;
     if (!autoplay) return;
@@ -55,8 +54,8 @@ const Carousel: React.FC<PropType> = (props) => {
           </div>
         </div>
 
-        <div className="embla__controls">
-          <div className="embla__buttons">
+        <div className="flex justify-center">
+          <div className="flex">
             <PrevButton
               onClick={onPrevButtonClick}
               disabled={prevBtnDisabled}
