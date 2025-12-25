@@ -34,7 +34,7 @@ export const DISPLAY_CONTENT: DisplayContentProps[] = [
 
 export const JOURNALS: JournalProps[] = [
   {
-    id: 1,
+    id: 100,
     title: "Journal n°1 - nov.-déc. 2021",
     picture: distribution.src,
     alt: "Journal n°1",
@@ -82,7 +82,7 @@ export const JOURNALS: JournalProps[] = [
     ],
   },
   {
-    id: 2,
+    id: 102,
     title: "Journal n°2 - mai-juin 2022",
     picture: station.src,
     alt: "Journal n°2",
@@ -126,7 +126,7 @@ export const JOURNALS: JournalProps[] = [
     ],
   },
   {
-    id: 3,
+    id: 103,
     title: "Journal n°3 - nov.-déc. 2022",
     picture: distribution.src,
     alt: "Journal n°3",
@@ -170,7 +170,7 @@ export const JOURNALS: JournalProps[] = [
     ],
   },
   {
-    id: 4,
+    id: 104,
     title: "Journal n°4 - mai-juin 2023",
     picture: station.src,
     alt: "Journal n°4",
@@ -214,7 +214,7 @@ export const JOURNALS: JournalProps[] = [
     ],
   },
   {
-    id: 5,
+    id: 105,
     title: "Journal n°5 - déc. 2023-jan. 2024",
     picture: distribution.src,
     alt: "Journal n°5",
@@ -771,7 +771,7 @@ export const ARTICLES: ArticleProps[] = [
     alt: "Article à propos de ...",
     title: "Titre de l'article 10",
     chapeau:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
+      "aaa Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
     createdAt: "10/11/2024",
     categoryId: 4,

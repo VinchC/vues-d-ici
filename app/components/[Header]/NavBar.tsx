@@ -1,4 +1,5 @@
 import Link from "next/link";
+import AutocompleteSearchBar from "./AutocompleteSearchBar";
 
 export const NavBar = () => {
   return (
@@ -43,7 +44,7 @@ export const NavBar = () => {
               Votre recherche
             </label>
             <div className="relative hidden md:block">
-              <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+              <div className="absolute inset-y-0 end-2 flex items-center ps-3 pointer-events-none">
                 <svg
                   className="w-4 h-4 text-body"
                   aria-hidden="true"
@@ -61,12 +62,13 @@ export const NavBar = () => {
                   />
                 </svg>
               </div>
-              <input
+              {/* <input
                 type="text"
                 id="input-group-1"
                 className="block w-full ps-9 pe-3 bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-md focus:ring-brand focus:border-brand px-2.5 py-2 shadow-xs placeholder:text-body"
                 placeholder="Rechercher"
-              />
+              /> */}
+              <AutocompleteSearchBar />
             </div>
             <button
               data-collapse-toggle="navbar-search"
