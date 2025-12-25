@@ -3,8 +3,8 @@
 import { ARTICLES, JOURNALS } from "@/data/data";
 import { useState, useEffect, useRef } from "react";
 import SearchInput from "./SearchInput";
-import ProductList from "./ProductList";
 import { Publication } from "@/app/types";
+import ResultList from "./ResultsList";
 
 export default function SearchBar() {
   const [query, setQuery] = useState("");
@@ -78,7 +78,7 @@ export default function SearchBar() {
 
   return (
     // <div className="flex flex-col max-w-lg mt-20 mx-auto font-FiraCode">
-      <>
+    <>
       <SearchInput
         value={query}
         onChange={handleQueryChange}
@@ -87,14 +87,15 @@ export default function SearchBar() {
         placeholder="Rechercher"
       />
 
-      {query !== "" && searchResults.length > 0 && (
-        <ProductList
-          publications={searchResults}
-          id={id}
-          handleProductClick={handleProductClick}
-        />
-      )}
-      </>
-    // {/* </div> */}
+      <div className="absolute end-0 w-56">
+        {query !== "" && searchResults.length > 0 && (
+          <ResultList
+            publications={searchResults}
+            id={id}
+            handleProductClick={handleProductClick}
+          />
+        )}
+      </div>
+    </>
   );
 }

@@ -7,13 +7,13 @@ type PublicationListProps = {
   handleProductClick: (publication: Publication) => void;
 };
 
-const ProductList: React.FC<PublicationListProps> = ({
+const ResultList: React.FC<PublicationListProps> = ({
   publications,
   id,
   handleProductClick,
 }) => {
   return (
-    <div className="bg-white max-h-96 resultProductContainer">
+    <div className="bg-gray-200 resultContainer px-4 py-1 shadow-sm focus:outline-none">
       {publications.map((publication, index) => (
         <Link
           key={publication.id}
@@ -31,4 +31,4 @@ const ProductList: React.FC<PublicationListProps> = ({
   );
 };
 
-export default ProductList;
+export default ResultList;
