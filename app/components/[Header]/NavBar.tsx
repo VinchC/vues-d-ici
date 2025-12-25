@@ -1,4 +1,5 @@
 import Link from "next/link";
+import SearchBar from "../utils/SearchBar";
 
 export const NavBar = () => {
   return (
@@ -14,15 +15,15 @@ export const NavBar = () => {
             </span>
           </Link>
           <div className="flex items-center md:order-2">
-            <button
-              type="button"
-              data-collapse-toggle="navbar-search"
-              aria-controls="navbar-search"
-              aria-expanded="false"
-              className="flex items-center justify-center md:hidden text-body hover:text-heading bg-transparent box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-2 focus:ring-neutral-tertiary font-medium leading-5 rounded-base text-sm w-10 h-10 focus:outline-none"
-            >
+            <label htmlFor="input-group-1" className="sr-only">
+              Votre recherche
+            </label>
+            <div className="relative md:block md:end-4">
+              <SearchBar />
+            </div>
+            <div className="absolute max-md:hidden inset-y-0 end-2 flex items-center ps-3 pointer-events-none">
               <svg
-                className="w-6 h-6"
+                className="w-4 h-4 text-body"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -37,36 +38,6 @@ export const NavBar = () => {
                   d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"
                 />
               </svg>
-              <span className="sr-only">Recherche</span>
-            </button>
-            <label htmlFor="input-group-1" className="sr-only">
-              Votre recherche
-            </label>
-            <div className="relative hidden md:block">
-              <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                <svg
-                  className="w-4 h-4 text-body"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeWidth="2"
-                    d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"
-                  />
-                </svg>
-              </div>
-              <input
-                type="text"
-                id="input-group-1"
-                className="block w-full ps-9 pe-3 bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-md focus:ring-brand focus:border-brand px-2.5 py-2 shadow-xs placeholder:text-body"
-                placeholder="Rechercher"
-              />
             </div>
             <button
               data-collapse-toggle="navbar-search"

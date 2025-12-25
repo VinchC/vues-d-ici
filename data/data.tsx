@@ -11,10 +11,12 @@ import {
   JournalProps,
   DisplayContentProps,
   AssociationProps,
+  CarouselPicturesProps,
 } from "../app/types";
 
 import distribution from "@/public/images/distribution_jeunes_ambitieux.jpg";
 import station from "@/public/images/station_serge_gainsbourg.jpg";
+import playground from "@/public/images/inauguration_playground_2.jpg";
 
 export const DISPLAY_CONTENT: DisplayContentProps[] = [
   {
@@ -34,7 +36,7 @@ export const DISPLAY_CONTENT: DisplayContentProps[] = [
 
 export const JOURNALS: JournalProps[] = [
   {
-    id: 1,
+    id: 101,
     title: "Journal n°1 - nov.-déc. 2021",
     picture: distribution.src,
     alt: "Journal n°1",
@@ -42,6 +44,7 @@ export const JOURNALS: JournalProps[] = [
       "Lorem bobo ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     createdAt: "1970-01-01T00:00:01Z",
     categoryId: 6,
+    link: "/journal/",
     content: [
       {
         id: 1,
@@ -82,7 +85,7 @@ export const JOURNALS: JournalProps[] = [
     ],
   },
   {
-    id: 2,
+    id: 102,
     title: "Journal n°2 - mai-juin 2022",
     picture: station.src,
     alt: "Journal n°2",
@@ -90,6 +93,7 @@ export const JOURNALS: JournalProps[] = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     createdAt: "1970-02-01T00:00:01Z",
     categoryId: 6,
+    link: "/journal/",
     content: [
       {
         id: 1,
@@ -126,7 +130,7 @@ export const JOURNALS: JournalProps[] = [
     ],
   },
   {
-    id: 3,
+    id: 103,
     title: "Journal n°3 - nov.-déc. 2022",
     picture: distribution.src,
     alt: "Journal n°3",
@@ -134,6 +138,7 @@ export const JOURNALS: JournalProps[] = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     createdAt: "1970-03-01T00:00:01Z",
     categoryId: 6,
+    link: "/journal/",
     content: [
       {
         id: 1,
@@ -170,7 +175,7 @@ export const JOURNALS: JournalProps[] = [
     ],
   },
   {
-    id: 4,
+    id: 104,
     title: "Journal n°4 - mai-juin 2023",
     picture: station.src,
     alt: "Journal n°4",
@@ -178,6 +183,7 @@ export const JOURNALS: JournalProps[] = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     createdAt: "1970-04-01T00:00:01Z",
     categoryId: 6,
+    link: "/journal/",
     content: [
       {
         id: 1,
@@ -214,14 +220,15 @@ export const JOURNALS: JournalProps[] = [
     ],
   },
   {
-    id: 5,
-    title: "Journal n°5 - déc. 2023-jan. 2024",
+    id: 105,
+    title: "Journal n°5 - déc. 23-jan. 24",
     picture: distribution.src,
     alt: "Journal n°5",
     chapeau:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     createdAt: "1970-05-01T00:00:01Z",
     categoryId: 6,
+    link: "/journal/",
     content: [
       {
         id: 1,
@@ -266,6 +273,7 @@ export const JOURNALS: JournalProps[] = [
   //     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...bibi",
   //   createdAt: "1970-06-01T00:00:01Z",
   //   categoryId: 6,
+  // link: "/journal/",
   //   content: [
   //     {
   //       id: 1,
@@ -598,6 +606,26 @@ export const CATEGORIES: CategoryProps[] = [
     href: "/articles?category=",
   },
 ];
+export const CAROUSELPICTURES: CarouselPicturesProps[] = [
+  {
+    id: 1,
+    picture: distribution.src,
+    alt: "Distribution aux jeunes ambitieux",
+    title: "Distribution aux jeunes ambitieux",
+  },
+  {
+    id: 2,
+    picture: station.src,
+    alt: "Station de métro Serge Gainsbourg",
+    title: "Station de métro Serge Gainsbourg",
+  },
+  {
+    id: 3,
+    picture: playground.src,
+    alt: "Inauguration du playground de la Place des Fêtes",
+    title: "Inauguration du playground de la Place des Fêtes",
+  },
+];
 
 export const CAROUSEL_SLIDERS: CarouselSliderProps[] = [
   {
@@ -668,6 +696,7 @@ export const ARTICLES: ArticleProps[] = [
     createdAt: "1970-01-01T00:00:00Z",
     categoryId: 1,
     newspaperId: 5,
+    link: "/article/",
   },
   {
     id: 2,
@@ -680,6 +709,7 @@ export const ARTICLES: ArticleProps[] = [
     createdAt: "1970-02-01T00:00:00Z",
     categoryId: 1,
     newspaperId: 1,
+    link: "/article/",
   },
   {
     id: 3,
@@ -692,6 +722,7 @@ export const ARTICLES: ArticleProps[] = [
     createdAt: "1970-04-01T00:00:00Z",
     categoryId: 1,
     newspaperId: 2,
+    link: "/article/",
   },
   {
     id: 4,
@@ -704,6 +735,7 @@ export const ARTICLES: ArticleProps[] = [
     createdAt: "1970-03-01T00:00:00Z",
     categoryId: 2,
     newspaperId: 3,
+    link: "/article/",
   },
   {
     id: 5,
@@ -716,6 +748,7 @@ export const ARTICLES: ArticleProps[] = [
     createdAt: "1970-03-01T00:00:01Z",
     categoryId: 2,
     newspaperId: 4,
+    link: "/article/",
   },
   {
     id: 6,
@@ -728,6 +761,7 @@ export const ARTICLES: ArticleProps[] = [
     createdAt: "06/11/2024",
     categoryId: 2,
     newspaperId: 5,
+    link: "/article/",
   },
   {
     id: 7,
@@ -740,6 +774,7 @@ export const ARTICLES: ArticleProps[] = [
     createdAt: "07/11/2024",
     categoryId: 3,
     newspaperId: 1,
+    link: "/article/",
   },
   {
     id: 8,
@@ -752,6 +787,7 @@ export const ARTICLES: ArticleProps[] = [
     createdAt: "08/11/2024",
     categoryId: 3,
     newspaperId: 2,
+    link: "/article/",
   },
   {
     id: 9,
@@ -764,6 +800,7 @@ export const ARTICLES: ArticleProps[] = [
     createdAt: "09/11/2024",
     categoryId: 3,
     newspaperId: 3,
+    link: "/article/",
   },
   {
     id: 10,
@@ -771,11 +808,12 @@ export const ARTICLES: ArticleProps[] = [
     alt: "Article à propos de ...",
     title: "Titre de l'article 10",
     chapeau:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
+      "aaa Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
     createdAt: "10/11/2024",
     categoryId: 4,
     newspaperId: 4,
+    link: "/article/",
   },
   {
     id: 11,
@@ -788,6 +826,7 @@ export const ARTICLES: ArticleProps[] = [
     createdAt: "11/11/2024",
     categoryId: 4,
     newspaperId: 5,
+    link: "/article/",
   },
   {
     id: 12,
@@ -800,6 +839,7 @@ export const ARTICLES: ArticleProps[] = [
     createdAt: "12/11/2024",
     categoryId: 4,
     newspaperId: 1,
+    link: "/article/",
   },
   {
     id: 13,
@@ -812,6 +852,7 @@ export const ARTICLES: ArticleProps[] = [
     createdAt: "13/11/2024",
     categoryId: 5,
     newspaperId: 2,
+    link: "/article/",
   },
   {
     id: 14,
@@ -824,6 +865,7 @@ export const ARTICLES: ArticleProps[] = [
     createdAt: "14/11/2024",
     categoryId: 5,
     newspaperId: 3,
+    link: "/article/",
   },
   {
     id: 15,
@@ -836,5 +878,6 @@ export const ARTICLES: ArticleProps[] = [
     createdAt: "15/11/2024",
     categoryId: 5,
     newspaperId: 4,
+    link: "/article/",
   },
 ];

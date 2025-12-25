@@ -16,6 +16,7 @@ export type JournalProps = {
   chapeau: string;
   createdAt: string;
   categoryId: number;
+  link: string;
   content: Array<{ id: number; categoryName: string; text: Array<string> }>;
 };
 
@@ -29,6 +30,7 @@ export type ArticleProps = {
   categoryId: number;
   newspaperId?: number;
   text?: string;
+  link: string;
 };
 
 export type FormProps = {
@@ -72,6 +74,13 @@ export type CategoryProps = {
   href: string;
 };
 
+export type CarouselPicturesProps = {
+  id: number;
+  title: string;
+  picture: string;
+  alt: string;
+};
+
 export type CarouselSliderProps = {
   data_twe_slide: string;
   path_d: string;
@@ -96,4 +105,12 @@ export type AssociationProps = {
   title: string;
   text: string;
   textButton: string;
+};
+
+export type Publication = {
+  id: number;
+  title: string;
+  text?: string;
+  chapeau?: string;
+  link: string;
 };
