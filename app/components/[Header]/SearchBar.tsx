@@ -6,8 +6,7 @@ import SearchInput from "./SearchInput";
 import ProductList from "./ProductList";
 import { Publication } from "@/app/types";
 
-
-const AutocompleteSearchBar = () => {
+export default function SearchBar() {
   const [query, setQuery] = useState("");
   const [id, setId] = useState<number>(-1);
   const [searchResults, setSearchResults] = useState<Publication[]>([]);
@@ -19,18 +18,20 @@ const AutocompleteSearchBar = () => {
     setQuery(event.target.value);
     setId(-1);
     setSearchResults(
-      publications.filter(
-        (publication) =>
-          publication.title
-            .toLowerCase()
-            .includes(event.target.value.toLowerCase()) ||
-          publication.text
-            ?.toLowerCase()
-            .includes(event.target.value.toLowerCase()) ||
-          publication.chapeau
-            ?.toLowerCase()
-            .includes(event.target.value.toLowerCase())
-      )
+      publications
+        .filter(
+          (publication) =>
+            publication.title
+              .toLowerCase()
+              .includes(event.target.value.toLowerCase()) ||
+            publication.text
+              ?.toLowerCase()
+              .includes(event.target.value.toLowerCase()) ||
+            publication.chapeau
+              ?.toLowerCase()
+              .includes(event.target.value.toLowerCase())
+        )
+        .slice(0, 10)
     );
   };
 
@@ -77,7 +78,7 @@ const AutocompleteSearchBar = () => {
 
   return (
     // <div className="flex flex-col max-w-lg mt-20 mx-auto font-FiraCode">
-    <>
+      <>
       <SearchInput
         value={query}
         onChange={handleQueryChange}
@@ -93,9 +94,7 @@ const AutocompleteSearchBar = () => {
           handleProductClick={handleProductClick}
         />
       )}
-    </>
-    // </div>
+      </>
+    // {/* </div> */}
   );
-};
-
-export default AutocompleteSearchBar;
+}
