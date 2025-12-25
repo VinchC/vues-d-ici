@@ -15,35 +15,10 @@ export const NavBar = () => {
             </span>
           </Link>
           <div className="flex items-center md:order-2">
-            {/* <button
-              type="button"
-              data-collapse-toggle="navbar-search"
-              aria-controls="navbar-search"
-              aria-expanded="false"
-              className="flex items-center justify-center md:hidden text-body hover:text-heading bg-transparent box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-2 focus:ring-neutral-tertiary font-medium leading-5 rounded-base text-sm w-10 h-10 focus:outline-none"
-            >
-              <svg
-                className="w-6 h-6"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeWidth="2"
-                  d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"
-                />
-              </svg>
-              <span className="sr-only">Recherche</span>
-            </button> */}
             <label htmlFor="input-group-1" className="sr-only">
               Votre recherche
             </label>
-            <div className="relative md:block">
+            <div className="relative md:block md:end-4">
               <SearchBar />
             </div>
             <div className="absolute max-md:hidden inset-y-0 end-2 flex items-center ps-3 pointer-events-none">
