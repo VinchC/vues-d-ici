@@ -6,14 +6,11 @@ import { JournalProps } from "@/app/types";
 import Download from "./Download";
 
 export const JournalComponent: any = (props: JournalProps) => {
-
   return (
     <>
       <section className="flex flex-col gap-0">
         <div className="p-4 gap-2 w-full m-0">
-          <h2>
-            #{props.id} - N° de {props.title}
-          </h2>
+          <h2>{props.title}</h2>
           <p className="paragraph">{props.chapeau}</p>
           <Download id={props.id} />
           <div className="flex max-sm:flex-col-reverse items-center max-sm:items-start mb-8">
