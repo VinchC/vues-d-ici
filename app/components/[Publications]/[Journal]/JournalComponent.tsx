@@ -1,10 +1,12 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { JournalProps } from "@/app/types";
 import Download from "./Download";
 
-export const JournalComponent = (props: JournalProps) => {
+export const JournalComponent: any = (props: JournalProps) => {
+
   return (
     <>
       <section className="flex flex-col gap-0">
