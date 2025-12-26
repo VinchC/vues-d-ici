@@ -42,7 +42,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li className="mb-4">
-                  <Link href="/associationr" className="hover:underline">
+                  <Link href="/association" className="hover:underline">
                     L&apos;association
                   </Link>
                 </li>
@@ -52,7 +52,7 @@ const Footer = () => {
           <hr className="my-6 border-default sm:mx-auto lg:my-8" />
           <div className="sm:flex sm:items-center sm:justify-between">
             <span className="text-sm text-body sm:text-center">
-              © 2026{" "}
+              © 2026 - {`...`}
               <Link href="/" className="hover:underline">
                 Vues d&apos;ici
               </Link>
