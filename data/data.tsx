@@ -36,13 +36,13 @@ export const DISPLAY_CONTENT: DisplayContentProps[] = [
 
 export const JOURNALS: JournalProps[] = [
   {
-    id: 101,
-    title: "Journal n°1 - nov.-déc. 2021",
+    id: 20,
+    title: "Journal n°20 - déc. 25-mai 26",
     picture: distribution.src,
-    alt: "Journal n°1",
+    alt: "Journal n°20",
     chapeau:
-      "Lorem bobo ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
-    createdAt: "1970-01-01T00:00:01Z",
+      "Nous et l'IA elle grignote nos vies ? \n La ressource des rigoles \n Les bombasphères",
+    createdAt: "2025-12-01T00:00:01Z",
     categoryId: 6,
     link: "/journal/",
     content: [
@@ -50,230 +50,185 @@ export const JOURNALS: JournalProps[] = [
         id: 1,
         categoryName: "Actus et initiatives... pp. 4-6",
         text: [
-          "La maison de santé bubu",
-          "La médiathèque",
-          "Librairie Boréalia",
+          "Les Buttes-Chaumont se rénovent",
+          "Visite de la Ressource des Rigoles",
+          "Profitons de la Petite Ceinture",
         ],
       },
       {
         id: 2,
         categoryName: "Le dossier... pp. 7-13",
-        text: [
-          "Elles et ils défendent une idée de Belleville : leurs visions, leurs combats",
-        ],
+        text: ["Nous et l'IA"],
       },
       {
         id: 3,
         categoryName: "Rencontre... p. 14",
-        text: ["Digudus, artiste à Belleville, nulle part ailleurs"],
+        text: ["Les bombasphères"],
       },
       {
         id: 4,
         categoryName: "Mémoire... p. 15",
-        text: ["Quand Belleville intégra Paris"],
+        text: ["Le musée de Poulaille rue Fessart"],
       },
       {
         id: 5,
         categoryName: "Lecture et Agenda... p. 15",
-        text: ["Le poète Jean-Luc Evens"],
+        text: ["Quartiers libres, ancêtre de Vues d’Ici"],
       },
       {
         id: 6,
-        categoryName: "Jeux... p. 16",
-        text: ["Photos énigmes"],
+        categoryName: "L'oeil des habitants p. 16",
+        text: ["Photos"],
       },
     ],
   },
   {
-    id: 102,
-    title: "Journal n°2 - mai-juin 2022",
-    picture: station.src,
-    alt: "Journal n°2",
-    chapeau:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
-    createdAt: "1970-02-01T00:00:01Z",
-    categoryId: 6,
-    link: "/journal/",
-    content: [
-      {
-        id: 1,
-        categoryName: "Actas et initiatives... pp. 4-6",
-        text: ["La maison de santé", "La médiathèque", "Librairie Boréalia"],
-      },
-      {
-        id: 2,
-        categoryName: "Le dossier... pp. 7-13",
-        text: [
-          "Elles et ils défendent une idée de Belleville : leurs visions, leurs combats",
-        ],
-      },
-      {
-        id: 3,
-        categoryName: "Rencontre... p. 14",
-        text: ["Digudus, artiste à Belleville, nulle part ailleurs"],
-      },
-      {
-        id: 4,
-        categoryName: "Mémoire... p. 15",
-        text: ["Quand Belleville intégra Paris"],
-      },
-      {
-        id: 5,
-        categoryName: "Lecture et Agenda... p. 15",
-        text: ["Le poète Jean-Luc Evens"],
-      },
-      {
-        id: 6,
-        categoryName: "Jeux... p. 16",
-        text: ["Photos énigmes"],
-      },
-    ],
-  },
-  {
-    id: 103,
-    title: "Journal n°3 - nov.-déc. 2022",
+    id: 19,
+    title: "Journal n°19 - juin à sept. 2025",
     picture: distribution.src,
-    alt: "Journal n°3",
+    alt: "Journal n°19",
     chapeau:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
-    createdAt: "1970-03-01T00:00:01Z",
-    categoryId: 6,
-    link: "/journal/",
-    content: [
-      {
-        id: 1,
-        categoryName: "pppppppp Actus et initiatives... pp. 4-6",
-        text: ["La maison de santé", "La médiathèque", "Librairie Boréalia"],
-      },
-      {
-        id: 2,
-        categoryName: "Le dossier... pp. 7-13",
-        text: [
-          "Elles et ils défendent une idée de Belleville : leurs visions, leurs combats",
-        ],
-      },
-      {
-        id: 3,
-        categoryName: "Rencontre... p. 14",
-        text: ["Digudus, artiste à Belleville, nulle part ailleurs"],
-      },
-      {
-        id: 4,
-        categoryName: "Mémoire... p. 15",
-        text: ["Quand Belleville intégra Paris"],
-      },
-      {
-        id: 5,
-        categoryName: "Lecture et Agenda... p. 15",
-        text: ["Le poète Jean-Luc Evens"],
-      },
-      {
-        id: 6,
-        categoryName: "Jeux... p. 16",
-        text: ["Photos énigmes"],
-      },
-    ],
-  },
-  {
-    id: 104,
-    title: "Journal n°4 - mai-juin 2023",
-    picture: station.src,
-    alt: "Journal n°4",
-    chapeau:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
-    createdAt: "1970-04-01T00:00:01Z",
+      "Nos cafés - du comptoir au coffee-shop \n Lycée Jules Richard - 100 ans qui racontent le quartier \n Nos parts d'ombre avec Fabrice Tassel",
+    createdAt: "2025-06-01T00:00:01Z",
     categoryId: 6,
     link: "/journal/",
     content: [
       {
         id: 1,
         categoryName: "Actus et initiatives... pp. 4-6",
-        text: ["La maison de santé", "La médiathèque", "Librairie Boréalia"],
+        text: [
+          "La Maison des réfugiés",
+          "Hommage à Maxime Braquet",
+          "Aure Chauvet",
+        ],
       },
       {
         id: 2,
         categoryName: "Le dossier... pp. 7-13",
-        text: [
-          "Elles et ils défendent une idée de Belleville : leurs visions, leurs combats",
-        ],
+        text: ["Un café s'il vous plaît !"],
       },
       {
         id: 3,
         categoryName: "Rencontre... p. 14",
-        text: ["Digudus, artiste à Belleville, nulle part ailleurs"],
+        text: ["Fabrice Tassel"],
       },
       {
         id: 4,
         categoryName: "Mémoire... p. 15",
-        text: ["Quand Belleville intégra Paris"],
+        text: ["Qui était Jules Richard ?"],
       },
       {
         id: 5,
         categoryName: "Lecture et Agenda... p. 15",
-        text: ["Le poète Jean-Luc Evens"],
+        text: ["Lire Petit chien sans ficelle", "Sélection d'événements"],
       },
       {
         id: 6,
-        categoryName: "Jeux... p. 16",
-        text: ["Photos énigmes"],
-      },
-    ],
-  },
-  {
-    id: 105,
-    title: "Journal n°5 - déc. 23-jan. 24",
-    picture: distribution.src,
-    alt: "Journal n°5",
-    chapeau:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
-    createdAt: "1970-05-01T00:00:01Z",
-    categoryId: 6,
-    link: "/journal/",
-    content: [
-      {
-        id: 1,
-        categoryName: "Actus et initiatives... pp. 4-6",
-        text: ["La maison de santé", "La médiathèque", "Librairie Boréalia"],
-      },
-      {
-        id: 2,
-        categoryName: "Le dossier... pp. 7-13",
-        text: [
-          "Elles et ils défendent une idée de Belleville : leurs visions, leurs combats",
-        ],
-      },
-      {
-        id: 3,
-        categoryName: "Rencontre... p. 14",
-        text: ["Digudus, artiste à Belleville, nulle part ailleurs"],
-      },
-      {
-        id: 4,
-        categoryName: "Mémoire... p. 15",
-        text: ["Quand Belleville intégra Paris"],
-      },
-      {
-        id: 5,
-        categoryName: "Lecture et Agenda... p. 15",
-        text: ["Le poète Jean-Luc Evens"],
-      },
-      {
-        id: 6,
-        categoryName: "Jeux... p. 16",
-        text: ["Photos énigmes"],
+        categoryName: "L'oeil des habitants p. 16",
+        text: ["Photos"],
       },
     ],
   },
   // {
-  //   id: 6,
-  //   title: "Journal n°6 - mai-juil. 2024",
+  //   id: 102,
+  //   title: "Journal n°2 - mai-juin 2022",
   //   picture: station.src,
-  //   alt: "Journal n°6",
+  //   alt: "Journal n°2",
   //   chapeau:
-  //     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...bibi",
-  //   createdAt: "1970-06-01T00:00:01Z",
+  //     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
+  //   createdAt: "1970-02-01T00:00:01Z",
   //   categoryId: 6,
-  // link: "/journal/",
+  //   link: "/journal/",
+  //   content: [
+  //     {
+  //       id: 1,
+  //       categoryName: "Actas et initiatives... pp. 4-6",
+  //       text: ["La maison de santé", "La médiathèque", "Librairie Boréalia"],
+  //     },
+  //     {
+  //       id: 2,
+  //       categoryName: "Le dossier... pp. 7-13",
+  //       text: [
+  //         "Elles et ils défendent une idée de Belleville : leurs visions, leurs combats",
+  //       ],
+  //     },
+  //     {
+  //       id: 3,
+  //       categoryName: "Rencontre... p. 14",
+  //       text: ["Digudus, artiste à Belleville, nulle part ailleurs"],
+  //     },
+  //     {
+  //       id: 4,
+  //       categoryName: "Mémoire... p. 15",
+  //       text: ["Quand Belleville intégra Paris"],
+  //     },
+  //     {
+  //       id: 5,
+  //       categoryName: "Lecture et Agenda... p. 15",
+  //       text: ["Le poète Jean-Luc Evens"],
+  //     },
+  //     {
+  //       id: 6,
+  //       categoryName: "Jeux... p. 16",
+  //       text: ["Photos énigmes"],
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 103,
+  //   title: "Journal n°3 - nov.-déc. 2022",
+  //   picture: distribution.src,
+  //   alt: "Journal n°3",
+  //   chapeau:
+  //     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
+  //   createdAt: "1970-03-01T00:00:01Z",
+  //   categoryId: 6,
+  //   link: "/journal/",
+  //   content: [
+  //     {
+  //       id: 1,
+  //       categoryName: "pppppppp Actus et initiatives... pp. 4-6",
+  //       text: ["La maison de santé", "La médiathèque", "Librairie Boréalia"],
+  //     },
+  //     {
+  //       id: 2,
+  //       categoryName: "Le dossier... pp. 7-13",
+  //       text: [
+  //         "Elles et ils défendent une idée de Belleville : leurs visions, leurs combats",
+  //       ],
+  //     },
+  //     {
+  //       id: 3,
+  //       categoryName: "Rencontre... p. 14",
+  //       text: ["Digudus, artiste à Belleville, nulle part ailleurs"],
+  //     },
+  //     {
+  //       id: 4,
+  //       categoryName: "Mémoire... p. 15",
+  //       text: ["Quand Belleville intégra Paris"],
+  //     },
+  //     {
+  //       id: 5,
+  //       categoryName: "Lecture et Agenda... p. 15",
+  //       text: ["Le poète Jean-Luc Evens"],
+  //     },
+  //     {
+  //       id: 6,
+  //       categoryName: "Jeux... p. 16",
+  //       text: ["Photos énigmes"],
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 104,
+  //   title: "Journal n°4 - mai-juin 2023",
+  //   picture: station.src,
+  //   alt: "Journal n°4",
+  //   chapeau:
+  //     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
+  //   createdAt: "1970-04-01T00:00:01Z",
+  //   categoryId: 6,
+  //   link: "/journal/",
   //   content: [
   //     {
   //       id: 1,
