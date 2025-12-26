@@ -129,141 +129,6 @@ export const JOURNALS: JournalProps[] = [
       },
     ],
   },
-  // {
-  //   id: 102,
-  //   title: "Journal n°2 - mai-juin 2022",
-  //   picture: station.src,
-  //   alt: "Journal n°2",
-  //   chapeau:
-  //     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
-  //   createdAt: "1970-02-01T00:00:01Z",
-  //   categoryId: 6,
-  //   link: "/journal/",
-  //   content: [
-  //     {
-  //       id: 1,
-  //       categoryName: "Actas et initiatives... pp. 4-6",
-  //       text: ["La maison de santé", "La médiathèque", "Librairie Boréalia"],
-  //     },
-  //     {
-  //       id: 2,
-  //       categoryName: "Le dossier... pp. 7-13",
-  //       text: [
-  //         "Elles et ils défendent une idée de Belleville : leurs visions, leurs combats",
-  //       ],
-  //     },
-  //     {
-  //       id: 3,
-  //       categoryName: "Rencontre... p. 14",
-  //       text: ["Digudus, artiste à Belleville, nulle part ailleurs"],
-  //     },
-  //     {
-  //       id: 4,
-  //       categoryName: "Mémoire... p. 15",
-  //       text: ["Quand Belleville intégra Paris"],
-  //     },
-  //     {
-  //       id: 5,
-  //       categoryName: "Lecture et Agenda... p. 15",
-  //       text: ["Le poète Jean-Luc Evens"],
-  //     },
-  //     {
-  //       id: 6,
-  //       categoryName: "Jeux... p. 16",
-  //       text: ["Photos énigmes"],
-  //     },
-  //   ],
-  // },
-  // {
-  //   id: 103,
-  //   title: "Journal n°3 - nov.-déc. 2022",
-  //   picture: distribution.src,
-  //   alt: "Journal n°3",
-  //   chapeau:
-  //     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
-  //   createdAt: "1970-03-01T00:00:01Z",
-  //   categoryId: 6,
-  //   link: "/journal/",
-  //   content: [
-  //     {
-  //       id: 1,
-  //       categoryName: "pppppppp Actus et initiatives... pp. 4-6",
-  //       text: ["La maison de santé", "La médiathèque", "Librairie Boréalia"],
-  //     },
-  //     {
-  //       id: 2,
-  //       categoryName: "Le dossier... pp. 7-13",
-  //       text: [
-  //         "Elles et ils défendent une idée de Belleville : leurs visions, leurs combats",
-  //       ],
-  //     },
-  //     {
-  //       id: 3,
-  //       categoryName: "Rencontre... p. 14",
-  //       text: ["Digudus, artiste à Belleville, nulle part ailleurs"],
-  //     },
-  //     {
-  //       id: 4,
-  //       categoryName: "Mémoire... p. 15",
-  //       text: ["Quand Belleville intégra Paris"],
-  //     },
-  //     {
-  //       id: 5,
-  //       categoryName: "Lecture et Agenda... p. 15",
-  //       text: ["Le poète Jean-Luc Evens"],
-  //     },
-  //     {
-  //       id: 6,
-  //       categoryName: "Jeux... p. 16",
-  //       text: ["Photos énigmes"],
-  //     },
-  //   ],
-  // },
-  // {
-  //   id: 104,
-  //   title: "Journal n°4 - mai-juin 2023",
-  //   picture: station.src,
-  //   alt: "Journal n°4",
-  //   chapeau:
-  //     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
-  //   createdAt: "1970-04-01T00:00:01Z",
-  //   categoryId: 6,
-  //   link: "/journal/",
-  //   content: [
-  //     {
-  //       id: 1,
-  //       categoryName: "Actus et initiatives... pp. 4-6",
-  //       text: ["La maison de santé", "La médiathèque", "Librairie Boréalia"],
-  //     },
-  //     {
-  //       id: 2,
-  //       categoryName: "Le dossier... pp. 7-13",
-  //       text: [
-  //         "Elles et ils défendent une idée de Belleville : leurs visions, leurs combats",
-  //       ],
-  //     },
-  //     {
-  //       id: 3,
-  //       categoryName: "Rencontre... p. 14",
-  //       text: ["Digudus, artiste à Belleville, nulle part ailleurs"],
-  //     },
-  //     {
-  //       id: 4,
-  //       categoryName: "Mémoire... p. 15",
-  //       text: ["Quand Belleville intégra Paris"],
-  //     },
-  //     {
-  //       id: 5,
-  //       categoryName: "Lecture et Agenda... p. 15",
-  //       text: ["Le poète Jean-Luc Evens"],
-  //     },
-  //     {
-  //       id: 6,
-  //       categoryName: "Jeux... p. 16",
-  //       text: ["Photos énigmes"],
-  //     },
-  //   ],
-  // },
 ];
 
 export const FORM_FIELDS: FormProps[] = [
@@ -447,29 +312,6 @@ export const SECONDARY_DISTRIBUTION_PLACES: DistributionPlacesProps[] = [
   },
 ];
 
-// export const SOCIAL_MEDIA: MediaProps[] = [
-//   {
-//     href: "https://www.facebook.com/Journal.Vuesdici",
-//     icon: <FacebookIcon />,
-//     label: "Lien vers la page Facebook de Vues d'ici.",
-//   },
-//   {
-//     href: "https://www.google.fr/maps/place/Pl.+des+F%C3%AAtes,+75019+Paris/@48.8771718,2.3915075,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66dbfb478cde1:0x8bc8dca1c6be6a3d!8m2!3d48.8771683!4d2.3940824!16s%2Fg%2F122czk_y?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D",
-//     icon: <GoogleIcon />,
-//     label: "Lien vers la page Google Maps centrée sur la Place des Fêtes.",
-//   },
-//   {
-//     href: "https://www.instagram.com/vues_d_ici_/",
-//     icon: <InstagramIcon />,
-//     label: "Lien vers la page Instagram de Vues d'ici.",
-//   },
-//   {
-//     href: "https://www.helloasso.com/",
-//     icon: <HelloAssoIcon />,
-//     label: "Lien vers la page du site Hello Asso.",
-//   },
-// ];
-
 export const NAVBAR_LINKS: NavLinkProps[] = [
   {
     href: "/articles",
@@ -641,14 +483,15 @@ export const ASSOCIATION: AssociationProps[] = [
 
 export const ARTICLES: ArticleProps[] = [
   {
-    id: 1,
+    id: 30,
     picture: distribution.src,
-    alt: "Article à propos de ...",
-    title: "Titre de l'article 1",
+    alt: "Article à propos de Jules Richard",
+    title: "Connaissez-vous Jules Richard ?",
     chapeau:
-      "baba Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
-    text: `bubu Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum. \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum. \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum. \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum. \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum. \n Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.`,
-    createdAt: "1970-01-01T00:00:00Z",
+      "Pour le centenaire du lycée Jules Richard, en juin, nous avons rassemblé de grands spécialistes de la stéréoscopie et de la métrologie », explique Joëlle Girard, enseignante dans ce lycée technologique situé rue Carducci organisatrice de l'événement avec son collègue Geoffrey Chavigny.",
+    text: `Pour le centenaire du lycée Jules Richard, en juin, nous avons rassemblé de grands spécialistes de la stéréoscopie et de la métrologie », explique Joëlle Girard, enseignante dans ce lycée technologique situé rue Carducci organisatrice de l'événement avec son collègue Geoffrey Chavigny. Mais qui était Jules Richard, figure industrielle du quartier du Plateau? Né en 1848, il effectue un apprentissage du métier d’horloger puis devient technicien à l’administration des télégraphes. En 1871, il prend la direction de l’usine de fabrication d’instruments scientifiques créée par son père Félix, rue Mélingue. Alors qu'elle était menacée de faillite, l’usine ainsi reprise en main devient une référence dans son domaine. Jules Richard est à l’origine de progrès majeurs en métrologie, discipline de la mesure, en créant notamment des appareils portatifs, simples et peu coûteux. Passionné de photographie, il se lance aussi en 1893 dans la création d’appareils stéréoscopiques, créant du relief à partir d'images planes: glyphoscope, taxiphote, vérascope. Ce dernier, appareil photo à plaques de verre, connaît un énorme succès. Dans les années 1900, l’usine se développe. Elle occupe une bonne partie de la rue Mélingue et s’étend vers les rues Clavel et de la Villette. Elle est voisine de la cité Elgé de Léon Gaumont. S'il n’en reste rien aujourd’hui, Jules Richard, manquant d’ouvriers qualifiés pour son usine, a créé en 1923 par contrat avec la Ville de Paris une fondation et une école professionnelle de mécanique de précision. L’école, inaugurée en 1925, est devenue le lycée technologique privé Jules Richard. Gratuit, il est spécialisé aujourd’hui dans l’enseignement des microtechniques. CC \n
+    Journées du centenaire : voir notre agenda`,
+    createdAt: "2025-06-01T00:00:00Z",
     categoryId: 1,
     newspaperId: 19,
     link: "/article/",
@@ -768,71 +611,6 @@ export const ARTICLES: ArticleProps[] = [
     createdAt: "10/11/2024",
     categoryId: 4,
     newspaperId: 20,
-    link: "/article/",
-  },
-  {
-    id: 11,
-    picture: distribution.src,
-    alt: "Article à propos de ...",
-    title: "Titre de l'article 11",
-    chapeau:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
-    createdAt: "11/11/2024",
-    categoryId: 4,
-    newspaperId: 19,
-    link: "/article/",
-  },
-  {
-    id: 12,
-    picture: station.src,
-    alt: "Article à propos de ...",
-    title: "Titre de l'article 12",
-    chapeau:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
-    createdAt: "12/11/2024",
-    categoryId: 4,
-    newspaperId: 20,
-    link: "/article/",
-  },
-  {
-    id: 13,
-    picture: distribution.src,
-    alt: "Article à propos de ...",
-    title: "Titre de l'article 13",
-    chapeau:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
-    createdAt: "13/11/2024",
-    categoryId: 5,
-    newspaperId: 19,
-    link: "/article/",
-  },
-  {
-    id: 14,
-    picture: station.src,
-    alt: "Article à propos de ...",
-    title: "Titre de l'article 14",
-    chapeau:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
-    createdAt: "14/11/2024",
-    categoryId: 5,
-    newspaperId: 20,
-    link: "/article/",
-  },
-  {
-    id: 15,
-    picture: distribution.src,
-    alt: "Article à propos de ...",
-    title: "Titre de l'article 15",
-    chapeau:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam quod dicta voluptatum. Aliquid, veniam autem natus necessitatibus labore culpa quo...",
-    text: "Lorem pops ipsum dolor sit amet consectetur adipisicing elit. Iusto hic ullam minus culpa repudiandae, nesciunt, facilis voluptates quas adipisci dolores tempora quae repellendus commodi deserunt rem? Blanditiis iure voluptas laborum.",
-    createdAt: "15/11/2024",
-    categoryId: 5,
-    newspaperId: 19,
     link: "/article/",
   },
 ];
