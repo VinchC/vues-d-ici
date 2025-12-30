@@ -10,7 +10,9 @@ export default function SearchBar() {
   const [query, setQuery] = useState("");
   const [id, setId] = useState<number>(-1);
   const [searchResults, setSearchResults] = useState<Publication[]>([]);
-  const inputRef = useRef<HTMLInputElement>(null);
+  // const inputRef = useRef<HTMLInputElement>("");
+  const inputRef = useRef<HTMLInputElement | null>(null);
+  // const inputRef = useRef<T>(initialValue: T | null): RefObject<T>
 
   const publications = ARTICLES.concat(JOURNALS);
 
