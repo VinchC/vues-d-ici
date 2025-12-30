@@ -19,7 +19,7 @@ export const NavBar = () => {
               Votre recherche
             </label>
             <div className="relative md:block md:end-4">
-              {/* <SearchBar /> */}
+              <SearchBar />
             </div>
             <div className="absolute max-md:hidden inset-y-0 end-2 flex items-center ps-3 pointer-events-none">
               <svg
