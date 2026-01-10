@@ -26,8 +26,8 @@ export const ArticleComponent: any = (props: ArticleProps) => {
           style={"cta purpleBG"}
         />
       </div>
-      <img src={props.picture} alt={props.alt} className="m-0 w-full" />
-      <div className="p-4 gap-2 w-full rounded-t-none m-0">
+      <img src={props.picture} alt={props.alt} className="marginTop w-full" />
+      <div className="marginTop w-full rounded-t-none m-0">
         <p>{props.chapeau}</p>
         <article>{props.text}</article>
       </div>

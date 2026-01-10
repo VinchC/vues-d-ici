@@ -13,35 +13,33 @@ export default async function ArticleDetailPage({ params }: { params: any }) {
   const articlesJournal = ARTICLES.filter(
     (e) => e.newspaperId == article.newspaperId && e.id != article.id
   )
-    .slice(0, 6)
-    .sort((a, b) => Date.parse(b.createdAt) - Date.parse(a.createdAt));
+    .sort((a, b) => Date.parse(b.createdAt) - Date.parse(a.createdAt))
+    .slice(0, 3);
 
   const articlesCategory = ARTICLES.filter(
     (e) => e.categoryId == article.categoryId && e.id != article.id
   )
-    .slice(0, 6)
-    .sort((a, b) => Date.parse(b.createdAt) - Date.parse(a.createdAt));
+    .sort((a, b) => Date.parse(b.createdAt) - Date.parse(a.createdAt))
+    .slice(0, 3);
 
   return (
     <>
-      <section className="flex max-md:flex-col justify-center items-center gap-4 max-lg:mt-12n">
-        <div>
-          <ArticleComponent {...article} />
-          <div className="">
-            <h2>Dans la même édition</h2>
-            <div className="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-12 max-lg:gap-8 justify-items-center">
-              {articlesJournal.map((articleJournal, index) => (
-                <PublicationCard key={index} {...articleJournal} />
-              ))}
-            </div>
+      <section className="secondarySection">
+        <ArticleComponent {...article} />
+        <div className="marginTop">
+          <h2>Dans la même édition</h2>
+          <div className="cardGrid">
+            {articlesJournal.map((articleJournal, index) => (
+              <PublicationCard key={index} {...articleJournal} />
+            ))}
           </div>
-          <div className="p-4 gap-2">
-            <h2>Dans la même catégorie</h2>
-            <div className="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-12 max-lg:gap-8 justify-items-center">
-              {articlesCategory.map((articleCategory, index) => (
-                <PublicationCard key={index} {...articleCategory} />
-              ))}
-            </div>
+        </div>
+        <div className="marginTop">
+          <h2>Dans la même catégorie</h2>
+          <div className="cardGrid">
+            {articlesCategory.map((articleCategory, index) => (
+              <PublicationCard key={index} {...articleCategory} />
+            ))}
           </div>
         </div>
       </section>
