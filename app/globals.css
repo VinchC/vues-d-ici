@@ -43,7 +43,7 @@ h3 {
 
 p {
   font-size: 1rem;
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 0.5rem; */
 }
 
 .resultContainer::-webkit-scrollbar {
@@ -74,12 +74,16 @@ p {
     @apply mt-8;
   }
 
+  .publicationCard {
+    @apply text-xs h-16 px-4;
+  }
+
   .cta {
     @apply text-black border-2 border-white p-2 rounded-xl w-48 max-md:w-36 max-md:text-xs text-center;
   }
 
   .readLink {
-    @apply text-black border-2 border-green-500 rounded-md w-24 max-md:w-18 max-md:text-xs text-center;
+    @apply text-black border-2 border-green-500 rounded-md w-24 max-md:w-18 max-md:text-xs text-center m-4;
   }
 
   .categoryLink {
