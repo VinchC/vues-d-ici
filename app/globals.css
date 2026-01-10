@@ -63,7 +63,7 @@ p {
   }
 
   .secondarySection {
-    @apply mb-16;
+    @apply mb-16 p-4 gap-2;
   }
 
   .cardGrid {
@@ -83,7 +83,7 @@ p {
   }
 
   .readLink {
-    @apply text-black border-2 border-green-500 rounded-md w-24 max-md:w-18 max-md:text-xs text-center m-4;
+    @apply text-black border-2 border-green-500 rounded-md w-24 text-center m-4;
   }
 
   .categoryLink {
