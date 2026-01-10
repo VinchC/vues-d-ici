@@ -32,7 +32,9 @@ export default function RootLayout({
     <html lang="fr" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <NavBar />
-        <main id="maincontent">{children}</main>
+        <main id="maincontent">
+          <section className="mainSection">{children}</section>
+        </main>
         <Footer />
       </body>
     </html>

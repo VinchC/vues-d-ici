@@ -16,13 +16,11 @@ const SLIDES: CarouselPictureProps[] = CAROUSELPICTURES;
 export default function Home() {
   return (
     <>
-      <div className="p-4 gap-2">
-        <EmblaCarousel slides={SLIDES} options={OPTIONS} />
-        <Hero />
-        <LastPublications />
-        <WhereToFind />
-        <BackTheJournal />
-      </div>
+      <EmblaCarousel slides={SLIDES} options={OPTIONS} />
+      <Hero />
+      <LastPublications />
+      <WhereToFind />
+      <BackTheJournal />
     </>
   );
 }
