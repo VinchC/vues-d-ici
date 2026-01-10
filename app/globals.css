@@ -75,7 +75,7 @@ section {
   }
 
   .categoryLink {
-    @apply text-black border-2 bg-blue-500 h-8 border-white rounded-md w-40 max-md:w-30 text-sm text-center;
+    @apply text-black border-2 bg-blue-500 h-8 border-white rounded-md w-36 text-sm max-md:text-xs text-center;
   }
 
   .blueBG {
