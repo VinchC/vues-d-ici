@@ -9,9 +9,5 @@ export default function PublicationsPageLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <main id="maincontent">
-      {children}
-    </main>
-  );
+  return <>{children}</>;
 }
