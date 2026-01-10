@@ -71,7 +71,11 @@ section {
   }
 
   .readLink {
-    @apply text-black border-2 border-green-500 rounded-md w-24 max-md:w-20 max-md:text-xs text-center;
+    @apply text-black border-2 border-green-500 rounded-md w-24 max-md:w-18 max-md:text-xs text-center;
+  }
+
+  .categoryLink {
+    @apply text-black border-2 bg-blue-500 h-8 border-white rounded-md w-40 max-md:w-30 text-sm text-center;
   }
 
   .blueBG {
@@ -92,5 +96,9 @@ section {
 
   .grayBG {
     @apply bg-gray-500 hover:bg-gray-500/60;
+  }
+
+  .greenBG {
+    @apply bg-green-500 hover:bg-green-500/60;
   }
 }
