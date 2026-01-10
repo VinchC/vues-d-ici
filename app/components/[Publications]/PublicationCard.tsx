@@ -5,7 +5,7 @@ import MainLink from "../utils/MainLink";
 
 export const PublicationCard = (props: ArticleProps) => {
   return (
-    <div className="flex flex-col gap-4 shadow-md rounded-lg w-80 h-84 sm:w-64 max-sm:h-80 border-purple-500 dark:border-green-500 border-2">
+    <div className="flex flex-col gap-4 shadow-md rounded-lg w-80 h-88 border-2 dark:border-purple-500 border-green-500">
       <img
         src={props.picture}
         alt={props.alt}
