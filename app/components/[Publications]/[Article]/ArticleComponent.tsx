@@ -29,7 +29,7 @@ export const ArticleComponent: any = (props: ArticleProps) => {
       <img src={props.picture} alt={props.alt} className="marginTop w-full" />
       <div className="marginTop w-full rounded-t-none m-0">
         <p>{props.chapeau}</p>
-        <article>{props.text}</article>
+        <article className="whitespace-pre-line">{props.text}</article>
       </div>
     </>
   );

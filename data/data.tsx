@@ -3,7 +3,6 @@ import {
   CarouselSliderProps,
   CategoryProps,
   NavLinkProps,
-  // MediaProps,
   DistributionPlacesProps,
   ArticleProps,
   CharterProps,
