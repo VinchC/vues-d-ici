@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@tailwind utilities;
 
 :root {
   --background: #ffffff;
@@ -14,7 +15,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #03021a;
+    --background: #040228;
     --foreground: #ffffff;
   }
 }
@@ -23,10 +24,6 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-}
-
-main {
-  margin: 2rem;
 }
 
 h1 {
@@ -46,11 +43,7 @@ h3 {
 
 p {
   font-size: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-section {
-  margin-bottom: 2rem;
+  /* margin-bottom: 0.5rem; */
 }
 
 .resultContainer::-webkit-scrollbar {
@@ -62,4 +55,62 @@ section {
 .resultContainer::-webkit-scrollbar-thumb {
   background: #d2a231;
   border-radius: 10px;
+}
+
+@layer utilities {
+  .mainSection {
+    @apply mx-auto w-full max-w-7xl p-4 py-6 lg:py-8 mt-8;
+  }
+
+  .secondarySection {
+    @apply mb-16 p-4 gap-2;
+  }
+
+  .cardGrid {
+    @apply grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-8 justify-items-center;
+  }
+
+  .marginTop {
+    @apply mt-8;
+  }
+
+  .publicationCard {
+    @apply text-xs h-16 px-4;
+  }
+
+  .cta {
+    @apply text-black border-2 border-white p-2 rounded-xl w-48 max-md:w-36 max-md:text-xs text-center;
+  }
+
+  .readLink {
+    @apply text-black border-2 border-green-500 rounded-md w-24 text-center m-4;
+  }
+
+  .categoryLink {
+    @apply text-black border-2 bg-blue-500 h-8 border-white rounded-md w-36 text-sm max-md:text-xs text-center;
+  }
+
+  .blueBG {
+    @apply bg-blue-500 hover:bg-blue-500/60;
+  }
+
+  .purpleBG {
+    @apply bg-purple-500 hover:bg-purple-500/60;
+  }
+
+  .redBG {
+    @apply bg-red-500 hover:bg-red-500/60;
+  }
+
+  .yellowBG {
+    @apply bg-yellow-500 hover:bg-yellow-500/60;
+  }
+
+  .grayBG {
+    @apply bg-gray-500 hover:bg-gray-500/60;
+  }
+
+  .greenBG {
+    @apply bg-green-500 hover:bg-green-500/60;
+  }
 }

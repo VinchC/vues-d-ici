@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { ArticleProps } from "@/app/types";
 import { CATEGORIES } from "@/data/data";
-import Link from "next/link";
+import MainLink from "../../utils/MainLink";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const ArticleComponent: any = (props: ArticleProps) => {
@@ -10,7 +10,7 @@ export const ArticleComponent: any = (props: ArticleProps) => {
   );
 
   const publishDate: string = props.createdAt;
-  const date = new Date(publishDate).toLocaleDateString()
+  const date = new Date(publishDate).toLocaleDateString();
 
   return (
     <>
@@ -20,11 +20,11 @@ export const ArticleComponent: any = (props: ArticleProps) => {
           <p className="text-green-300">{category}</p>
           <p className="text-xs italic spacing">Publié le {date}</p>
         </div>
-        <div className="bg-purple-500 text-black text-center align-middle w-40 h-8 border-2 border-purple-500 hover:bg-purple-500/60 rounded-lg">
-          <Link href={`/publications/journal/${props.newspaperId}`} className="text-black text-center align-middle">
-            Lire le journal
-          </Link>
-        </div>
+        <MainLink
+          title={"Lire le journal"}
+          href={`/publications/journal/${props.newspaperId}`}
+          style={"cta purpleBG"}
+        />
       </div>
       <img src={props.picture} alt={props.alt} className="m-0 w-full" />
       <div className="p-4 gap-2 w-full rounded-t-none m-0">

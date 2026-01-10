@@ -40,30 +40,32 @@ const Carousel: React.FC<PropType> = (props) => {
 
   return (
     <>
-      <section className="embla">
-        <div className="embla__viewport" ref={emblaRef}>
-          <div className="embla__container">
-            {slides.map((slide, index) => (
-              <img
-                src={slide.picture}
-                className="embla__slide"
-                key={index}
-                alt={slide.alt}
-              />
-            ))}
+      <section className="secondarySection">
+        <div className="embla ">
+          <div className="embla__viewport" ref={emblaRef}>
+            <div className="embla__container">
+              {slides.map((slide, index) => (
+                <img
+                  src={slide.picture}
+                  className="embla__slide"
+                  key={index}
+                  alt={slide.alt}
+                />
+              ))}
+            </div>
           </div>
-        </div>
 
-        <div className="flex justify-center">
-          <div className="flex">
-            <PrevButton
-              onClick={onPrevButtonClick}
-              disabled={prevBtnDisabled}
-            />
-            <NextButton
-              onClick={onNextButtonClick}
-              disabled={nextBtnDisabled}
-            />
+          <div className="flex justify-center">
+            <div className="flex">
+              <PrevButton
+                onClick={onPrevButtonClick}
+                disabled={prevBtnDisabled}
+              />
+              <NextButton
+                onClick={onNextButtonClick}
+                disabled={nextBtnDisabled}
+              />
+            </div>
           </div>
         </div>
       </section>

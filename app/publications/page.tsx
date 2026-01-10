@@ -6,6 +6,7 @@ import { CategoryProps } from "@/app/types";
 import { usePathname } from "next/navigation";
 import Search from "../components/utils/Search";
 import { PublicationCard } from "../components/[Publications]/PublicationCard";
+import Button from "../components/utils/Button";
 
 export default function Publications() {
   const [search, setSearch] = useState("");
@@ -51,20 +52,22 @@ export default function Publications() {
               : "Toutes les publications"}
           </h1>
 
-          <p className="mb-4">Rechercher le contenu d&apos;un article ou d&apos;un journal</p>
+          <p className="mb-4">
+            Rechercher le contenu d&apos;un article ou d&apos;un journal
+          </p>
           <div className="mb-8 mt-4">
             <Search search={search} handleSearchUpdate={setSearch} />
           </div>
           <h2>Filtrer par catégorie</h2>
           <div className="grid lg:grid-cols-6 md:grid-cols-3 max-md:grid-cols-2 gap-4 justify-items-center mt-8 mb-8">
             {CATEGORIES.map((category, index) => (
-              <button
+              <Button
                 key={index}
-                className="border-2 border-purple-500 rounded-lg text-sm max-sm:w-32 xs:text-xs w-36 h-8 max-sm:h-12 text-black bg-green-500 hover:bg-green-500/60"
-                onClick={() => setCategory(category)}
-              >
-                {category.title}
-              </button>
+                title={category.title}
+                type={"submit"}
+                style={"categoryLink greenBG"}
+                click={() => setCategory(category)}
+              />
             ))}
           </div>
           <div className="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-12 max-lg:gap-8 justify-items-center">
