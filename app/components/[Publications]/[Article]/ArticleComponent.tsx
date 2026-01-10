@@ -18,7 +18,7 @@ export const ArticleComponent: any = (props: ArticleProps) => {
       <div className="flex justify-between items-center">
         <div>
           <p className="text-green-300">{category}</p>
-          <p className="text-xs italic spacing">Publié le {date}</p>
+          <p className="text-xs italic spacing">Publié le {date} par {props.author}</p>
         </div>
         <MainLink
           title={"Lire le journal"}
