@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@tailwind utilities;
 
 :root {
   --background: #ffffff;
@@ -62,4 +63,10 @@ section {
 .resultContainer::-webkit-scrollbar-thumb {
   background: #d2a231;
   border-radius: 10px;
+}
+
+@layer utilities {
+  .cta {
+    @apply text-black border-2 p-2 rounded-xl w-48 max-md:w-36 max-md:text-xs text-center;
+  }
 }
