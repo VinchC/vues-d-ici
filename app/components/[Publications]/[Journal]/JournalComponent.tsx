@@ -12,7 +12,7 @@ export const JournalComponent: any = (props: JournalProps) => {
         <h1>{props.title}</h1>
         <div className="flex justify-between items-center">
           <div>
-            <p className="whitespace-pre-line font-bold">{props.chapeau}</p>
+            <p className="font-bold">{props.chapeau}</p>
           </div>
           <Download id={props.id} />
         </div>

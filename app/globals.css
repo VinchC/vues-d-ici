@@ -20,6 +20,10 @@
   }
 }
 
+* {
+  white-space: pre-line;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -43,8 +47,7 @@ h3 {
 
 p {
   font-size: 1rem;
-  white-space: pre-line;
-  /* margin-bottom: 0.5rem; */
+  margin-bottom: 0.5rem;
 }
 
 .resultContainer::-webkit-scrollbar {
@@ -121,5 +124,13 @@ p {
 
   .greenBG {
     @apply bg-green-500 hover:bg-green-500/60;
+  }
+
+  .formInput {
+    @apply w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-900 outline-none focus:border-purple-500 focus:shadow-md;
+  }
+
+  .formLabel {
+    @apply mb-4 block text-base font-medium;
   }
 }
