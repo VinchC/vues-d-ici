@@ -67,6 +67,6 @@ section {
 
 @layer utilities {
   .cta {
-    @apply text-black border-2 p-2 rounded-xl w-48 max-md:w-36 max-md:text-xs text-center;
+    @apply text-black border-2 border-white p-2 rounded-xl w-48 max-md:w-36 max-md:text-xs text-center;
   }
 }

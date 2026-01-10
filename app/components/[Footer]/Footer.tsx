@@ -20,7 +20,7 @@ const Footer = () => {
                 <p className="md:w-120">
                   Un journal conçu par et pour les habitants des quartiers
                   Jourdain, Belleville, Buttes-Chaumont, Place des Fêtes des
-                  XIXè et XXè arrondissements de Paris.
+                  XIXème et XXème arrondissements de Paris.
                 </p>
               </div>
             </div>
