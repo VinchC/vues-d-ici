@@ -122,7 +122,11 @@ const Contact: FC = () => {
             <PolicyAcceptance />
           </div>
           <div className="mt-8 flex justify-center">
-            <Button type={"submit"} title={"Envoyer"} />
+            <Button
+              type={"submit"}
+              title={"Envoyer"}
+              style={"cta bg-blue-300 hover:bg-blue-300/60"}
+            />
           </div>
         </form>
       </div>

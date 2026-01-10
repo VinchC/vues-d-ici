@@ -1,14 +1,14 @@
 export default function Button({
   title,
   type,
-}: //   className,
-{
+  style,
+}: {
   title: string;
   type: "submit" | "reset" | "button" | undefined;
-  //   className: string;
+  style: string;
 }) {
   return (
-    <button type={type} className="cta bg-blue-300 hover:bg-blue-300/60">
+    <button type={type} className={style}>
       {title}
     </button>
   );
