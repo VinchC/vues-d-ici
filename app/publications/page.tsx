@@ -21,8 +21,6 @@ export default function Publications() {
     (journal) => journal.categoryId === category?.id
   );
 
-  const publicationsByCategory = articlesByCategory.concat(journalsByCategory);
-
   const articles = ARTICLES.filter(
     (article) =>
       article.title.toLowerCase().includes(search.toLowerCase()) ||
@@ -39,68 +37,53 @@ export default function Publications() {
       )
   );
 
-  const publications = articles.concat(journals);
-  const publicationsLast = articles.concat(journals).slice(0, 6);
+  const publicationsByCategory = articlesByCategory
+    .concat(journalsByCategory)
+    .sort((a, b) => Date.parse(b.createdAt) - Date.parse(a.createdAt));
+
+  const publications = articles
+    .concat(journals)
+    .sort((a, b) => Date.parse(b.createdAt) - Date.parse(a.createdAt));
 
   return (
     <>
-      <section className="flex max-md:flex-col justify-center items-center gap-4 max-lg:mt-12n">
-        <div className="p-4 gap-2">
-          <h1>
-            {search
-              ? `Résultats de recherche pour ${search}`
-              : "Toutes les publications"}
-          </h1>
+      <section className="secondarySection">
+        <h1>
+          {search
+            ? `Résultats de recherche pour ${search}`
+            : "Toutes les publications"}
+        </h1>
 
-          <p className="mb-4">
-            Rechercher le contenu d&apos;un article ou d&apos;un journal
-          </p>
-          <div className="mb-8 mt-4">
-            <Search search={search} handleSearchUpdate={setSearch} />
-          </div>
-          <h2>Filtrer par catégorie</h2>
-          <div className="grid lg:grid-cols-6 md:grid-cols-3 max-md:grid-cols-2 gap-4 justify-items-center mt-8 mb-8">
-            {CATEGORIES.map((category, index) => (
-              <Button
-                key={index}
-                title={category.title}
-                type={"submit"}
-                style={"categoryLink greenBG"}
-                click={() => setCategory(category)}
-              />
-            ))}
-          </div>
-          <div className="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-12 max-lg:gap-8 justify-items-center">
-            {pathname == "/" && publicationsLast.length > 0 ? (
-              publicationsLast
-                .sort(
-                  (a, b) => Date.parse(b.createdAt) - Date.parse(a.createdAt)
-                )
-                .map((publication, index) => (
-                  <PublicationCard key={index} {...publication} />
-                ))
-            ) : pathname != "/" &&
-              category &&
-              publicationsByCategory.length > 0 ? (
-              publicationsByCategory
-                .sort(
-                  (a, b) => Date.parse(b.createdAt) - Date.parse(a.createdAt)
-                )
-                .map((publication, index) => (
-                  <PublicationCard key={index} {...publication} />
-                ))
-            ) : publications.length > 0 ? (
-              publications
-                .sort(
-                  (a, b) => Date.parse(b.createdAt) - Date.parse(a.createdAt)
-                )
-                .map((publication, index) => (
-                  <PublicationCard key={index} {...publication} />
-                ))
-            ) : (
-              <p>Aucun résultat</p>
-            )}
-          </div>
+        <p className="marginBottom">
+          Rechercher le contenu d&apos;un article ou d&apos;un journal
+        </p>
+        <div className="marginBottom">
+          <Search search={search} handleSearchUpdate={setSearch} />
+        </div>
+        <h2 className="marginTop">Filtrer par catégorie</h2>
+        <div className="grid lg:grid-cols-6 md:grid-cols-3 max-md:grid-cols-2 gap-4 justify-items-center marginTop marginBottom">
+          {CATEGORIES.map((category, index) => (
+            <Button
+              key={index}
+              title={category.title}
+              type={"submit"}
+              style={"categoryLink greenBG"}
+              click={() => setCategory(category)}
+            />
+          ))}
+        </div>
+        <div className="cardGrid">
+          {pathname != "/" && category && publicationsByCategory.length > 0 ? (
+            publicationsByCategory.map((publication, index) => (
+              <PublicationCard key={index} {...publication} />
+            ))
+          ) : publications.length > 0 ? (
+            publications.map((publication, index) => (
+              <PublicationCard key={index} {...publication} />
+            ))
+          ) : (
+            <p>Aucun résultat</p>
+          )}
         </div>
       </section>
     </>

@@ -8,17 +8,12 @@ import { JOURNALS } from "@/data/data";
 export default async function JournalDetailPage({ params }: { params: any }) {
   const { id } = await params;
 
-  const journal: JournalProps = JOURNALS.filter(
-      (e) => e.id == id
-    )[0];
-
+  const journal: JournalProps = JOURNALS.filter((e) => e.id == id)[0];
 
   return (
     <>
-      <section className="section">
+      <section className="secondarySection">
         <JournalComponent {...journal} />
-      </section>
-      <section className="section">
         <JournalArticles {...journal} />
       </section>
     </>

@@ -9,5 +9,5 @@ export default function ArticleDetailPageLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <main id="maincontent">{children}</main>;
+  return <>{children}</>;
 }

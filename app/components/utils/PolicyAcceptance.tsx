@@ -24,8 +24,9 @@ export default function PolicyAcceptance() {
           />
         </Switch>
       </div>
-      <Label className="paragraph">
-        En sélectionnant ceci, vous acceptez notre <Link href="#" className="font-semibold">
+      <Label>
+        En sélectionnant ceci, vous acceptez notre{" "}
+        <Link href="#" className="font-semibold">
           politique de confidentialité
         </Link>
         .

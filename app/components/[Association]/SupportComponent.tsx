@@ -4,9 +4,9 @@ import MainLink from "../utils/MainLink";
 
 export default function SupportComponent(props: AssociationProps) {
   return (
-    <div className="flex flex-col justify-around p-4 rounded-xl border-2 h-88 max-md:h-76 mb-4">
+    <div className="flex flex-col justify-around p-4 rounded-xl border-2 lg:h-68 h-76 marginBottom">
       <h3>{props.title}</h3>
-      <p className="text-xs">{props.text}</p>
+      <p>{props.text}</p>
       {props.textButton == "Faire un don" ? (
         <MainLink
           title={props.textButton}

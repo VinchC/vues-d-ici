@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-expressions */
 import { CharterProps } from "@/app/types";
 import UpAccordionIcon from "../icons/UpAccordionIcon";
 import { useState } from "react";
@@ -27,7 +28,7 @@ export default function Charter(props: CharterProps) {
         }}
         className="w-full flex justify-between py-5"
       >
-        <h3 className="charteParagraph">{props.title}</h3>
+        <p className="font-bold">{props.title}</p>
         <span
           id={`icon-${props.id}`}
           className="transition-transform duration-300"
@@ -39,11 +40,9 @@ export default function Charter(props: CharterProps) {
         id={`content-${props.id}`}
         className="max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
       >
-        <ul className="listStyle">
+        <ul>
           {props.text.map((e, index) => (
-            <li key={index}>
-              {e}
-            </li>
+            <li key={index}>{e}</li>
           ))}
         </ul>
       </div>
