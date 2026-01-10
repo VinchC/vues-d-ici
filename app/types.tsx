@@ -27,7 +27,7 @@ export type ArticleProps = {
   alt: string;
   chapeau: string;
   createdAt: string;
-  author: string;
+  author?: string;
   categoryId: number;
   newspaperId?: number;
   text?: string;
