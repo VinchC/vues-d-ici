@@ -10,7 +10,7 @@ import "./styles/embla.css";
 
 import { CAROUSELPICTURES } from "@/data/data";
 import { CarouselPictureProps } from "./types";
-const OPTIONS: EmblaOptionsType = { loop: true };
+const OPTIONS: EmblaOptionsType = { loop: true, duration: 50 };
 const SLIDES: CarouselPictureProps[] = CAROUSELPICTURES;
 
 export default function Home() {

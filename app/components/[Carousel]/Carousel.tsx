@@ -41,7 +41,7 @@ const Carousel: React.FC<PropType> = (props) => {
   return (
     <>
       <section className="secondarySection">
-        <div className="embla ">
+        <div className="embla">
           <div className="embla__viewport" ref={emblaRef}>
             <div className="embla__container">
               {slides.map((slide, index) => (
