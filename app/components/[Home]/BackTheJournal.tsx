@@ -14,10 +14,15 @@ export const BackTheJournal = () => {
               édition, ainsi que rejoindre l&apos;équipe de rédaction !
             </p>
             <div className="flex justify-evenly mt-8">
-              <MainLink title={"Nous contacter"} href={"/contact"} />
+              <MainLink
+                title={"Nous contacter"}
+                href={"/contact"}
+                style={"cta purpleBG"}
+              />
               <MainLink
                 title={"Nous soutenir"}
                 href={"/association#nous-soutenir"}
+                style={"cta purpleBG"}
               />
             </div>
           </div>

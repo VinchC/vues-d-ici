@@ -125,7 +125,7 @@ const Contact: FC = () => {
             <Button
               type={"submit"}
               title={"Envoyer"}
-              style={"cta bg-blue-300 hover:bg-blue-300/60"}
+              style={"cta blueBG"}
             />
           </div>
         </form>

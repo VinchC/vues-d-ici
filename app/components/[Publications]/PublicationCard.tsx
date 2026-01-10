@@ -1,8 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 import { ArticleProps } from "@/app/types";
-import Link from "next/link";
-import ReadLink from "../utils/ReadLink";
+import MainLink from "../utils/MainLink";
 
 export const PublicationCard = (props: ArticleProps) => {
   return (
@@ -16,9 +15,17 @@ export const PublicationCard = (props: ArticleProps) => {
         <p className="font-semibold text-xs">{props.title}</p>
         <p className="text-sm line-clamp-3">{props.chapeau}</p>
         {props.categoryId == 6 ? (
-          <ReadLink href={`/publications/journal/${props.id}`} />
+          <MainLink
+            title={"Lire"}
+            href={`/publications/journal/${props.id}`}
+            style={"readLink grayBG"}
+          />
         ) : (
-          <ReadLink href={`/publications/article/${props.id}`} />
+          <MainLink
+            title={"Lire"}
+            href={`/publications/article/${props.id}`}
+            style={"readLink grayBG"}
+          />
         )}
       </div>
     </div>

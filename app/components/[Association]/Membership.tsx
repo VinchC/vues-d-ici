@@ -16,7 +16,7 @@ export default function Membership() {
         click={onButtonClick}
         type={"button"}
         title={"Télécharger le bulletin"}
-        style={"cta bg-yellow-300 hover:bg-yellow-300/60"}
+        style={"cta yellowBG"}
       />
     </>
   );

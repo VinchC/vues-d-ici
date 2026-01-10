@@ -1,4 +1,3 @@
-import Link from "next/link";
 import MainLink from "../utils/MainLink";
 
 export const Hero = () => {
@@ -18,10 +17,15 @@ export const Hero = () => {
               et Place des Fêtes à Paris.
             </p>
             <div className="flex justify-evenly mt-8">
-              <MainLink title={"Trouver une édition"} href={"/publications"} />
+              <MainLink
+                title={"Trouver une édition"}
+                href={"/publications"}
+                style={"cta purpleBG"}
+              />
               <MainLink
                 title={"Nous soutenir"}
                 href={"/association#nous-soutenir"}
+                style={"cta purpleBG"}
               />
             </div>
           </div>
