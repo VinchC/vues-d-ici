@@ -8,11 +8,7 @@ export default function MainLink({
   href: string;
 }) {
   return (
-    <Link
-      target="_blank"
-      href={href}
-      className="cta bg-purple-600 hover:bg-purple-600/60"
-    >
+    <Link href={href} className="cta bg-purple-600 hover:bg-purple-600/60">
       {title}
     </Link>
   );

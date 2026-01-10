@@ -1,4 +1,4 @@
-import Link from "next/link";
+import MainLink from "../utils/MainLink";
 
 export const BackTheJournal = () => {
   return (
@@ -14,18 +14,11 @@ export const BackTheJournal = () => {
               édition, ainsi que rejoindre l&apos;équipe de rédaction !
             </p>
             <div className="flex justify-evenly mt-8">
-              <Link
-                href="/association#nous-soutenir"
-                className="bg-blue-500 text-black text-md text-center w-40 max-sm:w-32 max-sm:text-sm py-1 h-8 border-2 border-gray-500 hover:bg-blue-500/60 rounded-lg"
-              >
-                Nous soutenir
-              </Link>
-              <Link
-                href="/contact"
-                className="bg-blue-500 text-black text-md text-center w-40 max-sm:w-32 max-sm:text-sm py-1 h-8 border-2 border-gray-500 hover:bg-blue-500/60 rounded-lg"
-              >
-                Nous contacter
-              </Link>
+              <MainLink title={"Nous contacter"} href={"/contact"} />
+              <MainLink
+                title={"Nous soutenir"}
+                href={"/association#nous-soutenir"}
+              />
             </div>
           </div>
         </section>

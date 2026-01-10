@@ -2,6 +2,7 @@
 
 import { ArticleProps } from "@/app/types";
 import Link from "next/link";
+import ReadLink from "../utils/ReadLink";
 
 export const PublicationCard = (props: ArticleProps) => {
   return (
@@ -14,13 +15,11 @@ export const PublicationCard = (props: ArticleProps) => {
       <div className="flex flex-col px-4">
         <p className="font-semibold text-xs">{props.title}</p>
         <p className="text-sm line-clamp-3">{props.chapeau}</p>
-        <div className="bg-gray-500 text-black text-center w-24 h-8 border-2 dark:border-green-500 border-purple-500 hover:bg-gray-500/60 rounded-lg">
-          {props.categoryId == 6 ? (
-            <Link href={`/publications/journal/${props.id}`}>Lire</Link>
-          ) : (
-            <Link href={`/publications/article/${props.id}`}>Lire</Link>
-          )}
-        </div>
+        {props.categoryId == 6 ? (
+          <ReadLink href={`/publications/journal/${props.id}`} />
+        ) : (
+          <ReadLink href={`/publications/article/${props.id}`} />
+        )}
       </div>
     </div>
   );
