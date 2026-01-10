@@ -41,8 +41,8 @@ export const WhereToFind = () => {
           </span>{" "}
           pour l&apos;afficher sur la carte.
         </p>
-        <div className="flex max-lg:flex-col justify-center items-center marginTop">
-          <div className="flex-2">
+        <div className="twoItems">
+          <div className="flex-2 marginBottom">
             {MAIN_DISTRIBUTION_PLACES.map((place, index) => (
               <>
                 <div key={index}>
@@ -59,7 +59,7 @@ export const WhereToFind = () => {
               </>
             ))}
           </div>
-          <div className="flex flex-3 justify-center items-center marginTop">
+          <div className="flex-2">
             {chosenPlace ? (
               <iframe
                 src={chosenPlace}

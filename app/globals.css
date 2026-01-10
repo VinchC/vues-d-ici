@@ -70,6 +70,10 @@ p {
     @apply grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-8 justify-items-center;
   }
 
+  .twoItems {
+    @apply flex max-lg:flex-col-reverse justify-center items-center mt-8;
+  }
+
   .marginTop {
     @apply mt-8;
   }
