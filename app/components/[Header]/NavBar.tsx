@@ -7,12 +7,14 @@ import { useState } from "react";
 import { Menu } from "lucide-react";
 import { NAVBAR_LINKS } from "@/data/data";
 import { NavLink } from "../utils/NavLink";
+import SkipLink from "../utils/SkipLink";
 
 export const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <header className="border-b-2 border-background">
+      <SkipLink />
       <nav className="fixed w-full z-20 start-0 border-b border-default">
         <div className="bg-gray-200 text-black flex items-center justify-between p-2 h-16">
           <div className="md:w-40 w-24">

@@ -3,7 +3,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { NavBar } from "./components/[Header]/NavBar";
 import Footer from "./components/[Footer]/Footer";
-import SkipLink from "./components/utils/SkipLink";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,8 +30,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" suppressHydrationWarning>
+      <head></head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <SkipLink/>
         <NavBar />
         <main id="maincontent">
           <section className="mainSection">{children}</section>
