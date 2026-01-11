@@ -30,6 +30,24 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* --------------------Accessibility-------------------- */
+/* allows to "hide" the skip navigation link which is still accessible by any screen reader */
+#skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+/* displays the skip navigation link when it is focused */
+#skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  left: 1rem;
+}
+
 h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
@@ -59,6 +77,17 @@ p {
 .resultContainer::-webkit-scrollbar-thumb {
   background: #d2a231;
   border-radius: 10px;
+}
+
+input:focus-visible {
+  outline: 2px solid #9c27b0;
+  border-radius: 3px;
+}
+
+select:focus-visible {
+  border: 2px dashed #9c27b0;
+  border-radius: 3px;
+  outline: none;
 }
 
 @layer utilities {
@@ -119,7 +148,7 @@ p {
   }
 
   .grayBG {
-    @apply bg-gray-500 hover:bg-gray-500/60;
+    @apply bg-gray-200 hover:bg-gray-500/60;
   }
 
   .greenBG {

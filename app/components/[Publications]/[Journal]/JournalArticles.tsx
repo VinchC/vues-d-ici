@@ -20,7 +20,7 @@ export const JournalArticles = (props: JournalProps) => {
           <PublicationCard key={index} {...articleJournal} />
         ))}
       </div>
-      <div className="flex justify-evenly marginTop">
+      <div className="flex justify-between marginTop">
         {props.id - 1 >= indexMin ? (
           <MainLink
             title={"Edition précédente"}

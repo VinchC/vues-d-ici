@@ -10,6 +10,7 @@ export default function SupportComponent(props: AssociationProps) {
       {props.textButton == "Faire un don" ? (
         <MainLink
           title={props.textButton}
+          target="_blank"
           href={
             "https://www.helloasso.com/associations/quartier-vu-d-ici-19-20/collectes/prochain-numero-de-vues-d-ici-nous-avons-besoin-de-vous"
           }

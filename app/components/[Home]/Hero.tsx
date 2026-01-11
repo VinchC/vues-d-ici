@@ -15,7 +15,7 @@ export const Hero = () => {
         </p>
         <div className="flex justify-evenly marginTop">
           <MainLink
-            title={"Trouver une édition"}
+            title={"Voir nos publications"}
             href={"/publications"}
             style={"cta purpleBG"}
           />

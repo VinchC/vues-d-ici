@@ -4,6 +4,7 @@
 
 import { JournalProps } from "@/app/types";
 import Download from "./Download";
+// import PdfReader from "./PdfReader";
 
 export const JournalComponent: any = (props: JournalProps) => {
   return (
@@ -15,6 +16,7 @@ export const JournalComponent: any = (props: JournalProps) => {
             <p className="font-bold">{props.chapeau}</p>
           </div>
           <Download id={props.id} />
+          {/* <PdfReader id={props.id} /> */}
         </div>
         <div className="twoItems">
           <div className="flex-1 flex-col">
