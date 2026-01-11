@@ -12,8 +12,8 @@ export const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="top-0 border-b-2 border-background z-50">
-      <nav className="fixed w-full z-20 top-0 start-0 border-b border-default">
+    <header className="border-b-2 border-background">
+      <nav className="fixed w-full z-20 start-0 border-b border-default">
         <div className="bg-gray-200 text-black flex items-center justify-between p-2 h-16">
           <div className="md:w-40 w-24">
             <Link
