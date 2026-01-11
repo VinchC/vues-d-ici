@@ -39,7 +39,7 @@ export const NavBar = () => {
               }`}
             >
               {NAVBAR_LINKS.map((link, index) => (
-                <NavLink key={index} {...link} />
+                <li key={index} ><NavLink {...link} /></li>
               ))}
             </ul>
           </div>
