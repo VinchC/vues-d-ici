@@ -57,7 +57,7 @@ export default function Publications() {
         <p className="marginBottom">
           Rechercher le contenu d&apos;un article ou d&apos;un journal
         </p>
-        <div className="marginBottom">
+        <div className="marginBottom mt-4">
           <Search search={search} handleSearchUpdate={setSearch} />
         </div>
         <h2 className="marginTop">Filtrer par catégorie</h2>
