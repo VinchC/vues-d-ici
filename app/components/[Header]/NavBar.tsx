@@ -12,9 +12,9 @@ export const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="top-0 h-16 border-b-2 border-background z-50">
+    <header className="top-0 border-b-2 border-background z-50">
       <nav className="fixed w-full z-20 top-0 start-0 border-b border-default">
-        <div className="bg-gray-200 text-black flex items-center justify-between mx-auto p-4">
+        <div className="bg-gray-200 text-black flex items-center max-md:justify-items-center justify-between mx-auto p-2 h-16">
           <Link
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
@@ -23,13 +23,14 @@ export const NavBar = () => {
               Vues d&apos;Ici
             </span>
           </Link>
+          <div className="relative md:block md:end-4">
+            <SearchBar />
+          </div>
           <div
-            className={
-              !isOpen ? "max-md:invisible" : "w-8 rounded-sm p-2 mr-0"
-            }
+            className={!isOpen ? "max-md:invisible max-md:hidden" : ""}
           >
             <ul
-              className={`flex items-center gap-2 max-md:flex-col h-16 ${
+              className={`flex items-center gap-2 max-md:flex-col ${
                 !isOpen ? "max-md:invisible" : "max-md:visible"
               }`}
             >
@@ -38,9 +39,7 @@ export const NavBar = () => {
               ))}
             </ul>
           </div>
-          <div className="relative md:block md:end-4">
-            <SearchBar />
-          </div>
+
           <div className="md:hidden flex justify-end items-center">
             <button
               onClick={() => {

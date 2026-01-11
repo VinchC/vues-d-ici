@@ -13,7 +13,7 @@ const ResultList: React.FC<PublicationListProps> = ({
   handleProductClick,
 }) => {
   return (
-    <div className="bg-gray-200 resultContainer px-4 py-1 shadow-sm focus:outline-none">
+    <div className="bg-gray-200 resultContainer border-2 border-purple-500 rounded-md px-4 py-1 shadow-sm focus:outline-none">
       {publications.map((publication, index) => (
         <Link
           key={publication.id}
