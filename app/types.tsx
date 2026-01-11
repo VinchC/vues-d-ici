@@ -69,7 +69,7 @@ export type NavLinkProps = {
 export type CategoryProps = {
   id: number;
   title: string;
-  picture: string;
+  picture?: string;
   alt: string;
   data_twe_carousel_active?: string | undefined;
   href: string;

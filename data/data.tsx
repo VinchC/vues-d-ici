@@ -13,11 +13,8 @@ import {
   CarouselPicturesProps,
 } from "../app/types";
 
-import distribution from "@/public/images/distribution_jeunes_ambitieux.jpg";
-import station from "@/public/images/station_serge_gainsbourg.jpg";
-import playground from "@/public/images/inauguration_playground_2.jpg";
 import article31 from "@/public/images/31.jpg";
-import article32 from "@/public/images/32.png";
+import article32 from "@/public/images/32.jpg";
 import article33 from "@/public/images/33.jpg";
 import article34 from "@/public/images/34.jpg";
 import article35 from "@/public/images/35.jpg";
@@ -517,7 +514,7 @@ export const FOOTER_LINKS: NavLinkProps[] = [
 export const CATEGORIES: CategoryProps[] = [
   {
     id: 1,
-    picture: distribution.src,
+    picture: "",
     alt: "Image représentant la catégorie Mémoire & patrimoine",
     title: "Mémoire & patrimoine",
     data_twe_carousel_active: "data-twe-carousel-active",
@@ -525,35 +522,35 @@ export const CATEGORIES: CategoryProps[] = [
   },
   {
     id: 2,
-    picture: station.src,
+    picture: "",
     alt: "Image représentant la catégorie Art & culture",
     title: "Art & culture",
     href: "/articles?category=",
   },
   {
     id: 3,
-    picture: distribution.src,
+    picture: "",
     alt: "Image représentant la catégorie Nature & Ecologie",
     title: "Nature & Ecologie",
     href: "/articles?category=",
   },
   {
     id: 4,
-    picture: station.src,
+    picture: "",
     alt: "Image représentant la catégorie Activités",
     title: "Activités",
     href: "/articles?category=",
   },
   {
     id: 5,
-    picture: distribution.src,
+    picture: "",
     alt: "Image représentant la catégorie Actu du journal",
     title: "Actu du journal",
     href: "/articles?category=",
   },
   {
     id: 6,
-    picture: station.src,
+    picture: "",
     alt: "Image représentant la catégorie Editions complètes",
     title: "Editions complètes",
     href: "/articles?category=",
