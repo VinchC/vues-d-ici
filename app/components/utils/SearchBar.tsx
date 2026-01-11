@@ -10,9 +10,7 @@ export default function SearchBar() {
   const [query, setQuery] = useState("");
   const [id, setId] = useState<number>(-1);
   const [searchResults, setSearchResults] = useState<Publication[]>([]);
-  // const inputRef = useRef<HTMLInputElement>("");
   const inputRef = useRef<HTMLInputElement | null>(null);
-  // const inputRef = useRef<T>(initialValue: T | null): RefObject<T>
 
   const publications = ARTICLES.concat(JOURNALS);
 
@@ -48,7 +46,6 @@ export default function SearchBar() {
       );
     } else if (event.key === "Enter") {
       if (id !== -1) {
-        // const selectedProduct = searchResults[id];
         setQuery("");
         setId(-1);
         setSearchResults([]);
@@ -79,7 +76,6 @@ export default function SearchBar() {
   }, [id]);
 
   return (
-    // <div className="flex flex-col max-w-lg mt-20 mx-auto font-FiraCode">
     <>
       <SearchInput
         value={query}
@@ -89,7 +85,7 @@ export default function SearchBar() {
         placeholder="Rechercher"
       />
 
-      <div className="absolute end-0 w-56">
+      <div className="absolute end-0 md:w-56 w-48">
         {query !== "" && searchResults.length > 0 && (
           <ResultList
             publications={searchResults}

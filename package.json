@@ -25,6 +25,7 @@
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "react-hook-form": "^7.69.0",
+    "react-icons": "^5.5.0",
     "styled-components": "^6.1.19",
     "tw-elements": "^2.0.0"
   },

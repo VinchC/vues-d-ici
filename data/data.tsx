@@ -313,7 +313,7 @@ export const SECONDARY_DISTRIBUTION_PLACES: DistributionPlacesProps[] = [
 
 export const NAVBAR_LINKS: NavLinkProps[] = [
   {
-    href: "/articles",
+    href: "/publications",
     title: "Publications",
   },
   {
