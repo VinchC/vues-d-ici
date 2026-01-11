@@ -30,7 +30,7 @@ export const NavBar = () => {
           </div>
           <div className={!isOpen ? "max-md:invisible max-md:hidden" : ""}>
             <ul
-              className={`flex items-center gap-2 max-md:gap-0 max-md:grid ${
+              className={`flex items-center gap-4 max-md:gap-0 max-md:grid ${
                 !isOpen
                   ? "max-md:invisible"
                   : "max-md:visible max-md:absolute max-md:mt-8 max-md:p-4 max-md:rounded-sm max-md:bg-gray-200 max-md:right-0 max-md:gap-4"
