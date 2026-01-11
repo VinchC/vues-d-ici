@@ -1,5 +1,6 @@
 .embla {
   max-width: 48rem;
+  max-height: 36rem;
   margin: auto;
   --slide-height: 20rem;
   --slide-spacing: 0.2rem;
@@ -12,13 +13,16 @@
   display: flex;
   touch-action: pan-y pinch-zoom;
   margin-left: calc(var(--slide-spacing) * -1);
+  width: 48rem;
+  height: 32rem;
 }
 .embla__slide {
   transform: translate3d(0, 0, 0);
   flex: 0 0 var(--slide-size);
   min-width: 0;
-  /* height: 36rem; */
   padding-left: var(--slide-spacing);
+  max-width: auto;
+  max-height: auto;
 }
 .embla__slide__number {
   box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
