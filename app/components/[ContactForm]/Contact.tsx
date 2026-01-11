@@ -27,22 +27,24 @@ const Contact: FC = () => {
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 marginBottom">
           <div>
-            <label htmlFor="firstName" className="formLabel">
+            <label htmlFor="Prénom" className="formLabel">
               Prénom
             </label>
             <input
               type="text"
               placeholder="Prénom"
+              aria-label="Prénom"
               className="formInput"
               {...register("firstName", { required: true })}
             />
           </div>
           <div>
-            <label htmlFor="name" className="formLabel">
+            <label htmlFor="Nom de famille" className="formLabel">
               Nom de famille
             </label>
             <input
               type="text"
+              aria-label="Nom de famille"
               placeholder="Nom de famille"
               className="formInput"
               {...register("name", { required: true })}
@@ -55,28 +57,31 @@ const Contact: FC = () => {
             <input
               type="email"
               placeholder="example@domain.com"
+              aria-label="example@domain.com"
               className="formInput"
               {...register("email", { required: true })}
             />
           </div>
           <div>
-            <label htmlFor="company" className="formLabel">
+            <label htmlFor="Entreprise" className="formLabel">
               Entreprise
             </label>
             <input
               type="text"
               placeholder="Entreprise"
+              aria-label="Entreprise"
               className="formInput"
               {...register("company", { required: true })}
             />
           </div>
         </div>
         <div className="relative marginBottom">
-          <label htmlFor="subject" className="formLabel">
+          <label htmlFor="Sujet" className="formLabel">
             Sujet
           </label>
           <select
             id="message-subject"
+            aria-label="Sujet"
             // name="message-subject"
             className="block w-full text-black rounded-md border-0 px-3.5 py-2 bg-gray-300 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-700 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6 h-10"
             {...register("subject", { required: true })}
@@ -89,11 +94,12 @@ const Contact: FC = () => {
           </select>
         </div>
         <div className="marginBottom">
-          <label htmlFor="message" className="formLabel">
+          <label htmlFor="Message" className="formLabel" >
             Message
           </label>
           <textarea
             rows={4}
+            aria-label="Votre message"
             placeholder="Votre message"
             className="formInput"
             {...register("message", { required: true })}

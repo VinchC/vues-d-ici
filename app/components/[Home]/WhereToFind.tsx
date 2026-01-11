@@ -63,8 +63,9 @@ export const WhereToFind = () => {
             {chosenPlace ? (
               <iframe
                 src={chosenPlace}
-                width="440"
-                height="330"
+                width="560"
+                height="420"
+                title="Carte permettant de localiser le lieu choisi"
                 style={{ marginRight: 1 + "em" }}
                 allowFullScreen
                 loading="lazy"
@@ -73,8 +74,9 @@ export const WhereToFind = () => {
             ) : (
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10495.229275063457!2d2.3662814078125094!3d48.88094960000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66dc6143ed387%3A0xf26bed6076959491!2sParc%20des%20Buttes-Chaumont!5e0!3m2!1sfr!2sfr!4v1766596341521!5m2!1sfr!2sfr"
-                width="440"
-                height="330"
+                width="560"
+                height="420"
+                title="Carte centrée sur les Buttes-Chaumont"
                 style={{ marginRight: 1 + "em" }}
                 allowFullScreen
                 loading="lazy"

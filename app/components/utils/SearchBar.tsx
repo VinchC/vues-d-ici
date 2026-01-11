@@ -77,13 +77,16 @@ export default function SearchBar() {
 
   return (
     <>
-      <SearchInput
-        value={query}
-        onChange={handleQueryChange}
-        onKeyDown={handleKeyDown}
-        inputRef={inputRef}
-        placeholder="Rechercher"
-      />
+      <label htmlFor="Rechercher">
+        <SearchInput
+          value={query}
+          onChange={handleQueryChange}
+          onKeyDown={handleKeyDown}
+          inputRef={inputRef}
+          placeholder="Rechercher"
+          aria-label="Recherche du contenu dans le titre ou le texte d'un article ou d'un journal"
+        />
+      </label>
 
       <div className="absolute end-0 md:w-56 w-48">
         {query !== "" && searchResults.length > 0 && (

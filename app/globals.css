@@ -45,6 +45,7 @@ body {
   position: static;
   width: auto;
   height: auto;
+  left: 1rem;
 }
 
 h1 {
@@ -76,6 +77,17 @@ p {
 .resultContainer::-webkit-scrollbar-thumb {
   background: #d2a231;
   border-radius: 10px;
+}
+
+input:focus-visible {
+  outline: 2px solid #9c27b0;
+  border-radius: 3px;
+}
+
+select:focus-visible {
+  border: 2px dashed #9c27b0;
+  border-radius: 3px;
+  outline: none;
 }
 
 @layer utilities {

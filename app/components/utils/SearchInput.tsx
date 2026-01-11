@@ -24,6 +24,7 @@ const SearchInput: React.FC<SearchInputProps> = ({
       onKeyDown={onKeyDown}
       ref={inputRef}
       placeholder={placeholder}
+      aria-label="Recherche du contenu dans le titre ou le texte d'un article ou d'un journal"
     />
   );
 };
