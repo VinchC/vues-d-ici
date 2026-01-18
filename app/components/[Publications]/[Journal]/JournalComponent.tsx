@@ -22,20 +22,16 @@ export const JournalComponent: any = (props: JournalProps) => {
           <div className="flex-1 flex-col">
             <ul>
               {props.content.map((e, index) => (
-                <>
-                  <li className="font-bold mt-4" key={index}>
-                    {e.categoryName}
-                    <ul>
-                      {e.text.map((f, index2) => (
-                        <>
-                          <li className="font-normal" key={index2}>
-                            {f}
-                          </li>
-                        </>
-                      ))}
-                    </ul>
-                  </li>
-                </>
+                <li className="font-bold mt-4" key={index}>
+                  {e.categoryName}
+                  <ul>
+                    {e.text.map((f, index2) => (
+                      <li className="font-normal" key={index2}>
+                        {f}
+                      </li>
+                    ))}
+                  </ul>
+                </li>
               ))}
             </ul>
           </div>

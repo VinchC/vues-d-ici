@@ -15,19 +15,11 @@ export const PublicationCard = (props: ArticleProps) => {
       </div>
       <p className="font-semibold publicationCard">{props.title}</p>
       <p className="line-clamp-3 publicationCard">{props.chapeau}</p>
-      {props.categoryId == 6 ? (
-        <MainLink
-          title={"Lire"}
-          href={`/publications/journal/${props.id}`}
-          style={"readLink grayBG"}
-        />
-      ) : (
-        <MainLink
-          title={"Lire"}
-          href={`/publications/article/${props.id}`}
-          style={"readLink grayBG"}
-        />
-      )}
+      <MainLink
+        title={"Lire"}
+        href={`/publications/${props.link}/${props.slug ? props.slug : props.id}`}
+        style={"readLink grayBG"}
+      />
     </div>
   );
 };

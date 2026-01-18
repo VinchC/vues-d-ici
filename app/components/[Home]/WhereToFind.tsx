@@ -44,19 +44,17 @@ export const WhereToFind = () => {
         <div className="twoItems">
           <div className="flex-2 marginBottom">
             {MAIN_DISTRIBUTION_PLACES.map((place, index) => (
-              <>
-                <div key={index}>
-                  <button
-                    onClick={() => setChosenPlace(place.link)}
-                    className="font-bold mt-4 text-green-600"
-                  >
-                    {place.business_name}
-                  </button>
-                  <p>
-                    {place.address}, {place.city} {place.district}
-                  </p>
-                </div>
-              </>
+              <div key={index}>
+                <button
+                  onClick={() => setChosenPlace(place.link)}
+                  className="font-bold mt-4 text-green-600"
+                >
+                  {place.business_name}
+                </button>
+                <p>
+                  {place.address}, {place.city} {place.district}
+                </p>
+              </div>
             ))}
           </div>
           <div className="flex-2">
@@ -89,7 +87,7 @@ export const WhereToFind = () => {
           <button
             onClick={() => {
               // eslint-disable-next-line @typescript-eslint/no-unused-expressions
-              toggleAccordion(), setOpen;
+              (toggleAccordion(), setOpen);
             }}
             className="w-full flex justify-between"
           >

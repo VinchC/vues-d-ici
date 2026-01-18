@@ -4,6 +4,8 @@ import "./globals.css";
 import { NavBar } from "./components/[Header]/NavBar";
 import Footer from "./components/[Footer]/Footer";
 import CookieConsentBanner from "./components/utils/CookieConsent";
+import Loading from "./loading";
+import { Suspense } from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,8 +38,11 @@ export default function RootLayout({
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <NavBar />
+
         <main id="maincontent">
-          <section className="mainSection">{children}</section>
+          <Suspense fallback={<Loading />}>
+            <section className="mainSection">{children}</section>
+          </Suspense>
         </main>
         <CookieConsentBanner />
         <Footer />

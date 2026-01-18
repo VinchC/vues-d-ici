@@ -23,6 +23,7 @@ export type JournalProps = {
 export type ArticleProps = {
   id: number;
   title: string;
+  slug?: string;
   picture: string;
   alt: string;
   chapeau: string;

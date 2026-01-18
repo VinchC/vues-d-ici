@@ -10,8 +10,6 @@ export default async function JournalDetailPage({ params }: { params: any }) {
 
   const journal: JournalProps = JOURNALS.filter((e) => e.id == id)[0];
 
-  console.log(journal)
-
   return (
     <>
       <section className="secondarySection">
