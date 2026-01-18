@@ -3,6 +3,7 @@ import { PublicationCard } from "@/app/components/[Publications]/PublicationCard
 import { ArticleProps } from "@/app/types";
 import { ARTICLES } from "@/data/data";
 
+
 export default async function ArticleDetailPage({
   params,
 }: {
