@@ -24,7 +24,7 @@ export const PublicationCard = (props: ArticleProps) => {
       ) : (
         <MainLink
           title={"Lire"}
-          href={`/publications/article/${props.id}`}
+          href={`/publications/article/${props.slug ? props.slug : props.id}`}
           style={"readLink grayBG"}
         />
       )}
