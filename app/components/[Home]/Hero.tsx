@@ -13,6 +13,11 @@ export const Hero = () => {
           habitants des quartiers Belleville, Jourdain, Buttes-Chaumont et Place
           des Fêtes à Paris.
         </p>
+        <p className="marginTop">
+          Vues d&apos;ici est un journal gratuit et indépendant soutenu par les
+          habitants des quartiers Belleville, Jourdain, Buttes-Chaumont et Place
+          des Fêtes à Paris.
+        </p>
         <div className="flex justify-evenly marginTop">
           <MainLink
             title={"Voir nos publications"}
