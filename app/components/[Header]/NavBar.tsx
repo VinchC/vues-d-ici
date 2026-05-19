@@ -17,25 +17,25 @@ export const NavBar = () => {
       <SkipLink />
       <nav className="fixed w-full z-20 start-0 border-b border-default">
         <div className="bg-gray-200 text-black flex items-center justify-between p-2 h-16">
-          <div className="md:w-40 w-24">
+          <div className="lg:w-40 w-24">
             <Link
               href="/"
               className="flex items-center space-x-3 rtl:space-x-reverse "
             >
-              <span className="self-center text-lg md:text-xl text-heading font-semibold whitespace-nowrap">
+              <span className="self-center text-lg lg:text-xl text-heading font-semibold whitespace-nowrap">
                 Vues d&apos;Ici
               </span>
             </Link>
           </div>
-          <div className="relative md:block md:end-4">
+          <div className="relative lg:block lg:end-4">
             <SearchBar />
           </div>
-          <div className={!isOpen ? "max-md:invisible max-md:hidden" : ""}>
+          <div className={!isOpen ? "max-lg:invisible max-lg:hidden" : ""}>
             <ul
-              className={`flex items-center gap-4 max-md:gap-0 max-md:grid ${
+              className={`flex items-center gap-4 max-lg:gap-0 max-lg:grid ${
                 !isOpen
-                  ? "max-md:invisible"
-                  : "max-md:visible max-md:absolute max-md:mt-8 max-md:p-4 max-md:rounded-sm max-md:bg-gray-200 max-md:right-0 max-md:gap-4"
+                  ? "max-lg:invisible"
+                  : "max-lg:visible max-lg:absolute max-lg:mt-8 max-lg:p-4 max-lg:rounded-sm max-lg:bg-gray-200 max-lg:right-0 max-lg:gap-4"
               }`}
             >
               {NAVBAR_LINKS.map((link, index) => (
@@ -44,7 +44,7 @@ export const NavBar = () => {
             </ul>
           </div>
 
-          <div className="md:hidden flex justify-end items-center">
+          <div className="lg:hidden flex justify-end items-center">
             <button
               onClick={() => {
                 isOpen ? setIsOpen(false) : setIsOpen(true);
