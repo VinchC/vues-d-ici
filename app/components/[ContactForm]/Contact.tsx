@@ -25,7 +25,7 @@ const Contact: FC = () => {
   return (
     <>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 marginBottom">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 marginBottom mt-8">
           <div>
             <label htmlFor="Prénom" className="formLabel">
               Prénom

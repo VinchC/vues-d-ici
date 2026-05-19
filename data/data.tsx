@@ -476,20 +476,24 @@ export const SECONDARY_DISTRIBUTION_PLACES: DistributionPlacesProps[] = [
 
 export const NAVBAR_LINKS: NavLinkProps[] = [
   {
+    href: "/association",
+    title: "Qui sommes-nous",
+  },
+  {
     href: "/publications",
     title: "Publications",
   },
   {
     href: "/#nous-trouver",
-    title: "Nous trouver",
+    title: "Où trouver le journal",
   },
   {
     href: "/contact",
     title: "Nous contacter",
   },
   {
-    href: "/association",
-    title: "L'association",
+    href: "/nous-soutenir",
+    title: "Nous soutenir",
   },
 ];
 

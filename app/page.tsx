@@ -10,14 +10,14 @@ import "./styles/embla.css";
 
 import { ARTICLES } from "@/data/data";
 import { ArticleProps } from "./types";
-const OPTIONS: EmblaOptionsType = { loop: true, duration: 50 };
-const SLIDES: ArticleProps[] = ARTICLES.filter((e) => e.id > 36);
+// const OPTIONS: EmblaOptionsType = { loop: true, duration: 50 };
+// const SLIDES: ArticleProps[] = ARTICLES.filter((e) => e.id > 36);
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <EmblaCarousel slides={SLIDES} options={OPTIONS} />
+      {/* <EmblaCarousel slides={SLIDES} options={OPTIONS} /> */}
       <LastPublications />
       <WhereToFind />
       <BackTheJournal />

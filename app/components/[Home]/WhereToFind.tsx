@@ -101,9 +101,7 @@ export const WhereToFind = () => {
             className="max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
           >
             {SECONDARY_DISTRIBUTION_PLACES.map((place, index) => (
-              <Link key={index} href="/">
-                <p>{place.business_name}</p>
-              </Link>
+                <p key={index}>{place.business_name}</p>
             ))}
             <p>
               <strong>
