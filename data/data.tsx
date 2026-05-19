@@ -10,7 +10,6 @@ import {
   JournalProps,
   DisplayContentProps,
   AssociationProps,
-  CarouselPicturesProps,
 } from "../app/types";
 
 import article31 from "@/public/images/31.jpg";
@@ -566,26 +565,26 @@ export const CATEGORIES: CategoryProps[] = [
     href: "/articles?category=",
   },
 ];
-export const CAROUSELPICTURES: CarouselPicturesProps[] = [
-  {
-    id: 1,
-    picture: article37.src,
-    alt: "Distribution aux jeunes ambitieux",
-    title: "Distribution aux jeunes ambitieux",
-  },
-  {
-    id: 2,
-    picture: article38.src,
-    alt: "Station de métro Serge Gainsbourg",
-    title: "Station de métro Serge Gainsbourg",
-  },
-  {
-    id: 3,
-    picture: article40.src,
-    alt: "Inauguration du playground de la Place des Fêtes",
-    title: "Inauguration du playground de la Place des Fêtes",
-  },
-];
+// export const CAROUSELPICTURES: CarouselPicturesProps[] = [
+//   {
+//     id: 1,
+//     picture: article37.src,
+//     alt: "Photo de Louyz",
+//     title: "Photo de Louyz",
+//   },
+//   {
+//     id: 2,
+//     picture: article38.src,
+//     alt: "Photo d'un jardin",
+//     title: "Photo d'un jardin",
+//   },
+//   {
+//     id: 3,
+//     picture: article40.src,
+//     alt: "Inauguration du playground de la Place des Fêtes",
+//     title: "Inauguration du playground de la Place des Fêtes",
+//   },
+// ];
 
 export const CAROUSEL_SLIDERS: CarouselSliderProps[] = [
   {

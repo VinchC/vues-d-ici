@@ -8,10 +8,12 @@ import {
 } from "./CarouselArrowButtons";
 import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
-import { CarouselPictureProps } from "@/app/types";
+import { ArticleProps } from "@/app/types";
+import MainLink from "../utils/MainLink";
+import Link from "next/link";
 
 type PropType = {
-  slides: CarouselPictureProps[];
+  slides: ArticleProps[];
   options?: EmblaOptionsType;
 };
 
@@ -47,8 +49,8 @@ const Carousel: React.FC<PropType> = (props) => {
               {slides.map((slide, index) => (
                 <img
                   src={slide.picture}
-                  className="embla__slide"
                   key={index}
+                  className="embla__slide"
                   alt={slide.alt}
                 />
               ))}
