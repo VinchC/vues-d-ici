@@ -17,7 +17,7 @@ export const PublicationCard = (props: ArticleProps) => {
       <p className="line-clamp-3 publicationCard">{props.chapeau}</p>
       <MainLink
         title={"Lire"}
-        href={`/publications/${props.link}/${props.slug ? props.slug : props.id}`}
+        href={`/publications${props.link}/${props.slug ? props.slug : props.id}`}
         style={"readLink grayBG"}
       />
     </div>
