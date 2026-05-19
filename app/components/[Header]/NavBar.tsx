@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-expressions */
 "use client";
 
 import Link from "next/link";
@@ -8,7 +7,8 @@ import { Menu } from "lucide-react";
 import { NAVBAR_LINKS } from "@/data/data";
 import { NavLink } from "../utils/NavLink";
 import SkipLink from "../utils/SkipLink";
-
+import logo from "@/public/images/logo.png";
+import Image from "next/image";
 export const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -22,9 +22,11 @@ export const NavBar = () => {
               href="/"
               className="flex items-center space-x-3 rtl:space-x-reverse "
             >
-              <span className="self-center text-lg lg:text-xl text-heading font-semibold whitespace-nowrap">
-                Vues d&apos;Ici
-              </span>
+              <Image
+                src={logo}
+                alt="Logo de l'association Vues d'Ici"
+                className="w-12 h-12"
+              />
             </Link>
           </div>
           <div className="relative lg:block lg:end-4">
@@ -39,7 +41,9 @@ export const NavBar = () => {
               }`}
             >
               {NAVBAR_LINKS.map((link, index) => (
-                <li key={index} ><NavLink {...link} /></li>
+                <li key={index}>
+                  <NavLink {...link} />
+                </li>
               ))}
             </ul>
           </div>
