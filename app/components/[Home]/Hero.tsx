@@ -18,7 +18,7 @@ export const Hero = () => {
           habitants des quartiers Belleville, Jourdain, Buttes-Chaumont et Place
           des Fêtes à Paris.
         </p>
-        <div className="flex justify-evenly marginTop">
+        {/* <div className="flex justify-evenly marginTop">
           <MainLink
             title={"Voir nos publications"}
             href={"/publications"}
@@ -29,7 +29,7 @@ export const Hero = () => {
             href={"/association#nous-soutenir"}
             style={"cta purpleBG"}
           />
-        </div>
+        </div> */}
       </section>
     </>
   );
