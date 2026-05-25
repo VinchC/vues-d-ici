@@ -6,6 +6,14 @@ import { JournalProps } from "@/app/types";
 import Download from "./Download";
 import PdfViewer from "./PdfViewer";
 
+import dynamic from "next/dynamic";
+
+// Lazy loading du composant PDF
+const PdfModalViewer = dynamic(() => import("./PdfModalViewer"), {
+  ssr: false,
+  loading: () => <p>Chargement du composant PDF...</p>,
+});
+
 export const JournalComponent: any = (props: JournalProps) => {
   return (
     <>
@@ -16,7 +24,11 @@ export const JournalComponent: any = (props: JournalProps) => {
             <p className="font-bold">{props.chapeau}</p>
           </div>
           <div>
-            <PdfViewer file="/pdfs/document.pdf" />
+            <PdfViewer id={props.id}  />
+            {/* <PdfModalViewer
+              fileUrl="/vues-dici-17.pdf"
+              buttonLabel="Ouvrir le document"
+            /> */}
             <Download id={props.id} />
           </div>
         </div>
