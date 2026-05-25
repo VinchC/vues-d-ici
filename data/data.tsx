@@ -497,32 +497,32 @@ export const NAVBAR_LINKS: NavLinkProps[] = [
   },
 ];
 
-export const FOOTER_LINKS: NavLinkProps[] = [
-  {
-    href: "/articles",
-    title: "Articles",
-  },
-  {
-    href: "/#nous-trouver",
-    title: "Nous trouver",
-  },
-  {
-    href: "/association#nous-rejoindre",
-    title: "Nous rejoindre",
-  },
-  {
-    href: "/association#nous-soutenir",
-    title: "Nous soutenir",
-  },
-  {
-    href: "/contact",
-    title: "Nous contacter",
-  },
-  {
-    href: "/association",
-    title: "Qui sommes-nous ?",
-  },
-];
+// export const FOOTER_LINKS: NavLinkProps[] = [
+//   {
+//     href: "/articles",
+//     title: "Articles",
+//   },
+//   {
+//     href: "/#nous-trouver",
+//     title: "Nous trouver",
+//   },
+//   {
+//     href: "/association#nous-rejoindre",
+//     title: "Nous rejoindre",
+//   },
+//   {
+//     href: "/association#nous-soutenir",
+//     title: "Nous soutenir",
+//   },
+//   {
+//     href: "/contact",
+//     title: "Nous contacter",
+//   },
+//   {
+//     href: "/association",
+//     title: "Qui sommes-nous ?",
+//   },
+// ];
 
 export const CATEGORIES: CategoryProps[] = [
   {
