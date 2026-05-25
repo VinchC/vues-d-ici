@@ -51,12 +51,10 @@ export default function PdfModalViewer({
       {isOpen && (
         <div
           className="fixed inset-0 z-50 bg-black/70 p-4"
-          // ✅ Ferme la modale si clic extérieur
           onClick={() => setIsOpen(false)}
         >
           <div
             className="mx-auto h-full max-w-5xl overflow-auto rounded bg-white p-4"
-            // ✅ Empêche fermeture si clic dans la modale
             onClick={(e) => e.stopPropagation()}
           >
             <button

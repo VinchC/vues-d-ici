@@ -16,7 +16,7 @@ export const JournalComponent: any = (props: JournalProps) => {
           <div>
             <p className="font-bold">{props.chapeau}</p>
           </div>
-          <div>
+          <div className="grid gap-4">
             <PdfViewer id={props.id} />
             <Download id={props.id} />
           </div>

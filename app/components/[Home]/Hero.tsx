@@ -14,22 +14,8 @@ export const Hero = () => {
           des Fêtes à Paris.
         </p>
         <p className="marginTop">
-          Vues d&apos;ici est un journal gratuit et indépendant soutenu par les
-          habitants des quartiers Belleville, Jourdain, Buttes-Chaumont et Place
-          des Fêtes à Paris.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias perspiciatis consequuntur enim magni inventore qui temporibus, harum hic. Debitis odit ipsa ullam sapiente iusto sint quos fugit neque eius blanditiis.
         </p>
-        {/* <div className="flex justify-evenly marginTop">
-          <MainLink
-            title={"Voir nos publications"}
-            href={"/publications"}
-            style={"cta purpleBG"}
-          />
-          <MainLink
-            title={"Nous soutenir"}
-            href={"/association#nous-soutenir"}
-            style={"cta purpleBG"}
-          />
-        </div> */}
       </section>
     </>
   );
