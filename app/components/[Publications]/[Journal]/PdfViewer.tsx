@@ -9,9 +9,5 @@ const PdfModalViewer = dynamic(() => import("./PdfModalViewer"), {
 
 export default function PdfViewer(id: any) {
   const pdfUrl = `/vues-dici-${id.id}.pdf`;
-  return (
-    <main className="flex min-h-screen items-center justify-center">
-      <PdfModalViewer fileUrl={pdfUrl} buttonLabel="Ouvrir le document" />
-    </main>
-  );
+  return <PdfModalViewer fileUrl={pdfUrl} buttonLabel="Ouvrir le document" />;
 }
