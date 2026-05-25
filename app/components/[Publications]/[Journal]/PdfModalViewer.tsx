@@ -6,7 +6,6 @@ import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/Page/AnnotationLayer.css";
 import "react-pdf/dist/Page/TextLayer.css";
 
-// ✅ Worker local compatible Next.js
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   "pdfjs-dist/build/pdf.worker.min.mjs",
   import.meta.url,
@@ -69,7 +68,7 @@ export default function PdfModalViewer({
                 <Page
                   key={`page_${index + 1}`}
                   pageNumber={index + 1}
-                  width={800}
+                  width={880}
                 />
               ))}
             </Document>

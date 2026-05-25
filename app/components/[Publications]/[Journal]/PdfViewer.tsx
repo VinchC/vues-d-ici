@@ -9,5 +9,5 @@ const PdfModalViewer = dynamic(() => import("./PdfModalViewer"), {
 
 export default function PdfViewer(id: any) {
   const pdfUrl = `/vues-dici-${id.id}.pdf`;
-  return <PdfModalViewer fileUrl={pdfUrl} buttonLabel="Ouvrir le document" />;
+  return <PdfModalViewer fileUrl={pdfUrl} buttonLabel="Lire le PDF" />;
 }
