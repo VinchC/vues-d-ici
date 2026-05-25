@@ -1,6 +1,8 @@
 import Link from "next/link";
 import helloasso from "@/public/images/hello-asso.jpg";
 import Image from "next/image";
+import { NAVBAR_LINKS } from "@/data/data";
+import { NavLink } from "../utils/NavLink";
 
 const Footer = () => {
   return (
@@ -24,26 +26,11 @@ const Footer = () => {
         </div>
         <div className="grid">
           <ul className="text-body font-medium max-md:flex max-md:justify-between">
-            <li className="mb-4">
-              <Link href="/publications" className="hover:underline">
-                Publications
-              </Link>
-            </li>
-            <li className="mb-4">
-              <Link href="/#nous-trouver" className="hover:underline">
-                Nous trouver
-              </Link>
-            </li>
-            <li className="mb-4">
-              <Link href="/contact" className="hover:underline">
-                Contact
-              </Link>
-            </li>
-            <li className="mb-4">
-              <Link href="/association" className="hover:underline">
-                L&apos;association
-              </Link>
-            </li>
+            {NAVBAR_LINKS.map((link, index) => (
+              <li key={index} className="mb-4">
+                <NavLink {...link} />
+              </li>
+            ))}
           </ul>
         </div>
       </div>
