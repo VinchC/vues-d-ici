@@ -6,6 +6,7 @@ import Footer from "./components/[Footer]/Footer";
 import CookieConsentBanner from "./components/utils/CookieConsent";
 import Loading from "./loading";
 import { Suspense } from "react";
+import { Analytics } from '@vercel/analytics/next';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -46,6 +47,7 @@ export default function RootLayout({
         </main>
         <CookieConsentBanner />
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
